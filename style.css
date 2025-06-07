@@ -179,3 +179,56 @@ nav a {
   height: 100%;
   object-fit: cover;
 }
+
+
+
+
+
+.contact-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.contact-section h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #a5b4fc;
+}
+
+.contact-section p {
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #f9f8ff;
+}
+
+.contact-infos {
+  margin-bottom: 40px;
+}
+
+.contact-infos a {
+  color: #a5b4fc;
+  text-decoration: none;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-contact input,
+.form-contact textarea {
+  padding: 10px;
+  font-family: 'Manrope', sans-serif;
+  border: 1px solid #8e86b5;
+  border-radius: 5px;
+  background-color: #f9f8ff;
+  color: #242424;
+}
+
+.form-contact input:focus,
+.form-contact textarea:focus {
+  outline: none;
+  border: 1px solid #a5b4fc;
+}
