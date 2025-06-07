@@ -22,7 +22,7 @@ body.page-contact {
 
 /* Applique l’image de fond fixe à tout l’espace entre header et footer */
 body.page-contact main.contact-section {
-  background-image: url('FondContact.jpg');
+  background-image: url('FondContact.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
