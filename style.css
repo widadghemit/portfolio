@@ -21,7 +21,7 @@ em {
 h1 {
   font-size: 3.5em;
   color: #a5b4fc;
-  font-family: 'Montserrat', sans-setif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
@@ -123,9 +123,23 @@ nav a {
 .accueil-introduction {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  justify-content: space-between;
   align-items: center;
+  width: 80%;
   margin: auto;
+  gap: 80px;
+}
+
+.accueil-introduction div {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.accueil-introduction img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .portfolio-section-photos {
