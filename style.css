@@ -45,8 +45,10 @@ p, li {
   color: #f9f8ff;
 }
 
-.lien-violet {
+/* Lien portfolio avec même couleur que Widad */
+.lien-widad {
   color: #a5b4fc !important;
+}
 
 /* *** Header & Footer *** */
 header, footer {
@@ -108,13 +110,13 @@ section {
 /* === ACCUEIL === */
 .accueil-introduction {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row; /* Texte à gauche, image à droite */
   justify-content: space-between;
   align-items: center;
   width: 80%;
   margin: auto;
   padding: 50px;
-  gap: 150px; /* espace augmenté */
+  gap: 150px;
 }
 
 .accueil-introduction img {
@@ -126,7 +128,7 @@ section {
 }
 
 .accueil-introduction .texte-intro {
-  width: 50%; /* texte plus large */
+  width: 50%;
 }
 
 .accueil-introduction h1 {
@@ -137,7 +139,7 @@ section {
   text-align: justify;
   color: #f9f8ff;
   line-height: 1.7;
-  margin-bottom: 40px; /* plus d'espace avec le bouton */
+  margin-bottom: 40px;
 }
 
 .accueil-photos {
@@ -219,7 +221,6 @@ body.page-contact main.contact-section {
   color: #a5b4fc;
 }
 
-/* Texte d’introduction */
 .contact-card > p {
   color: #1f2039;
 }
