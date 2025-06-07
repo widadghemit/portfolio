@@ -41,7 +41,6 @@ li {
   color: #f9f8ff;
 }
 
-/* === HEADER & FOOTER === */
 header,
 footer {
   background-color: white;
@@ -68,8 +67,10 @@ nav div {
 
 nav a {
   margin-left: 30px;
+  font-weight: bold;
 }
 
+/* CTA bouton */
 .cta {
   background: linear-gradient(#8e86b5, #acaeed);
   color: white;
@@ -92,11 +93,11 @@ nav a {
   opacity: 0.5;
 }
 
-/* === SECTIONS === */
 section {
   padding: 80px 20px;
 }
 
+/* Section introduction */
 .accueil-introduction {
   display: flex;
   flex-direction: row;
@@ -125,6 +126,7 @@ section {
   color: #f9f8ff;
 }
 
+/* Section photos accueil */
 .accueil-photos {
   background-color: white;
   padding: 80px;
@@ -144,6 +146,7 @@ section {
   margin-bottom: 15px;
 }
 
+/* Portfolio */
 .portfolio-section-photos {
   background-color: white;
 }
@@ -175,12 +178,11 @@ section {
   object-fit: cover;
 }
 
-/* === CONTACT === */
+/* Contact */
 .contact-section {
   max-width: 800px;
   margin: auto;
   padding: 80px 20px;
-  color: #242424;
 }
 
 .contact-section h2 {
@@ -194,8 +196,9 @@ section {
   background-color: white;
   padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
+  color: #242424;
   text-align: center;
 }
 
@@ -230,6 +233,7 @@ section {
   border: 1px solid #a5b4fc;
 }
 
+/* Enveloppe animation */
 .flying-envelope {
   position: fixed;
   bottom: 50px;
