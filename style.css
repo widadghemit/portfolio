@@ -10,7 +10,7 @@ html, body {
 body {
   font-family: 'Manrope', sans-serif;
   font-size: 1em;
-  background-color: #1f2039; /* Fond violet foncé par défaut */
+  background-color: #1f2039;
   display: flex;
   flex-direction: column;
 }
@@ -184,19 +184,28 @@ body.page-contact main.contact-section {
   justify-content: flex-end;
   padding: 40px;
 }
+
 .contact-card {
   background-color: rgba(255,255,255,0.9);
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  max-width: 450px;
-  width: 100%;
+  width: 66%; /* 2/3 de la largeur */
+  max-width: none;
   text-align: left;
+  margin-right: 5%;
 }
+
 .contact-card h1 {
   margin-bottom: 20px;
   color: #a5b4fc;
 }
+
+/* Texte d’introduction */
+.contact-card > p {
+  color: #1f2039;
+}
+
 .contact-infos p {
   margin: 10px 0;
   color: #242424;
@@ -207,6 +216,7 @@ body.page-contact main.contact-section {
 .contact-infos a:hover {
   text-decoration: underline;
 }
+
 .form-contact {
   display: flex;
   flex-direction: column;
@@ -231,6 +241,7 @@ body.page-contact main.contact-section {
   outline: none;
   border: 1px solid #a5b4fc;
 }
+
 .flying-envelope {
   position: fixed;
   bottom: 50px;
@@ -250,6 +261,7 @@ body.page-contact main.contact-section {
 .flying-envelope.animate {
   animation: fly-up 1.5s ease-out forwards;
 }
+
 #status {
   text-align: center;
   font-weight: bold;
