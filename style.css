@@ -189,7 +189,7 @@ section {
   min-height: calc(100vh - 160px); /* 100vh - (header + footer height) */
   margin: 0;
   padding: 80px 20px;
-  background-image: url('FondContact.png');
+  background-image: url('FondContact.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
