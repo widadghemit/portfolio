@@ -15,7 +15,6 @@ body {
   flex-direction: column;
 }
 
-/* Annule le violet pour la page Contact et applique un fond blanc */
 body.page-contact {
   background-color: white;
 }
@@ -45,8 +44,7 @@ p, li {
   color: #f9f8ff;
 }
 
-/* Lien portfolio avec même couleur que Widad */
-.lien-widad {
+.lien-violet {
   color: #a5b4fc !important;
 }
 
@@ -110,7 +108,7 @@ section {
 /* === ACCUEIL === */
 .accueil-introduction {
   display: flex;
-  flex-direction: row; /* Texte à gauche, image à droite */
+  flex-direction: row; /* texte à gauche, image à droite */
   justify-content: space-between;
   align-items: center;
   width: 80%;
