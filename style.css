@@ -15,21 +15,12 @@ body {
   flex-direction: column;
 }
 
-/* Annule le violet pour la page Contact et applique un fond blanc par défaut */
+/* Annule le violet pour la page Contact et applique un fond blanc */
 body.page-contact {
   background-color: white;
 }
 
-/* Applique l’image de fond fixe à tout l’espace entre header et footer */
-body.page-contact main.contact-section {
-  background-image: url('FondContact.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-/* LIENS ET TEXTES */
+/* *** Liens et textes *** */
 a {
   color: #242424;
   text-decoration: none;
@@ -54,7 +45,7 @@ p, li {
   color: #f9f8ff;
 }
 
-/* HEADER & FOOTER */
+/* *** Header & Footer *** */
 header, footer {
   background-color: white;
   padding: 20px 50px;
@@ -64,7 +55,7 @@ header, footer {
 }
 nav {
   display: flex;
-  justify-content: space-between; /* logo left, links right */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
@@ -78,29 +69,24 @@ nav a {
   margin-left: 30px;
   font-weight: bold;
 }
-nav a:first-child {
-  display: inline-block;
-  height: auto;
-}
 
-/* CTA BOUTON */
+/* *** CTA bouton *** */
 .cta {
   background: linear-gradient(#8e86b5, #acaeed);
   color: white;
   border-radius: 50px;
   padding: 20px 30px;
-  display: inline-block;
-  margin-top: 40px;
   border: none;
   cursor: pointer;
   font-weight: bold;
   transition: background 0.3s ease;
+  align-self: flex-start;
 }
 .cta:hover {
   background: linear-gradient(#696484, #8788ba);
 }
 
-/* ICÔNES RÉSEAUX */
+/* *** Icônes réseaux *** */
 .lien-icone {
   margin-left: 30px;
 }
@@ -108,17 +94,16 @@ nav a:first-child {
   opacity: 0.5;
 }
 
-/* SECTIONS GÉNÉRIQUES */
+/* *** Sections génériques *** */
 section {
   padding: 80px 20px;
 }
 
 /* === ACCUEIL === */
-/* Fond violet déjà géré par body */
 .accueil-introduction {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* centré verticalement */
+  align-items: center;
   width: 50%;
   margin: auto;
   padding: 50px;
@@ -135,10 +120,8 @@ section {
 }
 .accueil-introduction p {
   text-align: justify;
-  font-size: 1.1em;
   color: #f9f8ff;
 }
-
 .accueil-photos {
   background-color: white;
   padding: 80px;
@@ -158,7 +141,6 @@ section {
 .a-propos-main {
   width: 50%;
   margin: auto;
-  /* padding: 80px 20px; si besoin */
 }
 
 /* === PORTFOLIO === */
@@ -190,34 +172,33 @@ section {
 }
 
 /* === CONTACT === */
-main.contact-section {
-  background-attachment: fixed;
+body.page-contact main.contact-section {
   flex: 1;
-  background-image: url('FondContact.jpg');
+  background-image: url('FondContact.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: calc(100vh - 160px);
+  background-attachment: fixed;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 40px;
 }
 .contact-card {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 20px;
+  background-color: rgba(255,255,255,0.9);
+  padding: 30px;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  max-width: 350px;
+  max-width: 450px;
   width: 100%;
   text-align: left;
 }
 .contact-card h1 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #a5b4fc;
 }
 .contact-infos p {
-  margin: 8px 0;
+  margin: 10px 0;
   color: #242424;
 }
 .contact-infos a {
@@ -229,8 +210,8 @@ main.contact-section {
 .form-contact {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-top: 15px;
+  gap: 12px;
+  margin-top: 20px;
 }
 .form-contact label {
   font-weight: bold;
@@ -238,7 +219,8 @@ main.contact-section {
 }
 .form-contact input,
 .form-contact textarea {
-  padding: 8px;
+  width: 100%;
+  padding: 10px;
   border: 1px solid #8e86b5;
   border-radius: 5px;
   background-color: #f9f8ff;
@@ -248,9 +230,6 @@ main.contact-section {
 .form-contact textarea:focus {
   outline: none;
   border: 1px solid #a5b4fc;
-}
-.cta {
-  margin-top: 10px;
 }
 .flying-envelope {
   position: fixed;
