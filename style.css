@@ -41,6 +41,7 @@ li {
   color: #f9f8ff;
 }
 
+/* === HEADER & FOOTER === */
 header,
 footer {
   background-color: white;
@@ -48,6 +49,21 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav div {
+  display: flex;
 }
 
 nav a {
@@ -76,6 +92,7 @@ nav a {
   opacity: 0.5;
 }
 
+/* === SECTIONS === */
 section {
   padding: 80px 20px;
 }
@@ -158,6 +175,7 @@ section {
   object-fit: cover;
 }
 
+/* === CONTACT === */
 .contact-section {
   max-width: 800px;
   margin: auto;
