@@ -85,6 +85,9 @@ nav a {
 .cta:hover {
   background: linear-gradient(#696484, #8788ba);
 }
+.cta.cv-button {
+  margin-top: 20px; /* Ajouté pour l'espacement du bouton */
+}
 
 /* *** Icônes réseaux *** */
 .lien-icone {
@@ -102,9 +105,10 @@ section {
 /* === ACCUEIL === */
 .accueil-introduction {
   display: flex;
+  flex-direction: row-reverse; /* Inverser image/texte */
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 80%;
   margin: auto;
   padding: 50px;
   gap: 100px;
@@ -114,6 +118,7 @@ section {
   width: 100%;
   height: auto;
   object-fit: contain;
+  align-self: flex-start;
 }
 .accueil-introduction h1 {
   margin-bottom: 40px;
@@ -121,7 +126,11 @@ section {
 .accueil-introduction p {
   text-align: justify;
   color: #f9f8ff;
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 30px;
 }
+
 .accueil-photos {
   background-color: white;
   padding: 80px;
@@ -190,7 +199,7 @@ body.page-contact main.contact-section {
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  width: 66%; /* 2/3 de la largeur */
+  width: 66%;
   max-width: none;
   text-align: left;
   margin-right: 5%;
@@ -201,7 +210,6 @@ body.page-contact main.contact-section {
   color: #a5b4fc;
 }
 
-/* Texte d’introduction */
 .contact-card > p {
   color: #1f2039;
 }
