@@ -8,7 +8,7 @@
 body {
   font-family: 'Manrope', sans-serif;
   font-size: 1em;
-  background-color: #1f2039;
+  background-color: white;
 }
 
 a {
@@ -185,14 +185,17 @@ section {
 
 /* Contact */
 .contact-section {
-  max-width: 800px;
-  margin: auto;
+  width: 100%;
   padding: 80px 20px;
   background-image: url('FondContact.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 15px;
+  min-height: calc(100vh - 160px); /* à adapter si header/footer + grands/petits */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-section h2 {
@@ -281,11 +284,6 @@ section {
   transition: opacity 0.5s ease-in-out;
   color: #a5b4fc;
 }
-
-#status.visible {
-  opacity: 1;
-}
-
 
 #status.visible {
   opacity: 1;
