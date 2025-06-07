@@ -1,83 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-</head>
-  
-<body>
-
- <header>
-        <nav>
-            <img src="Logo.png" alt="Logo Widad">
-            <div>
-                <a href="index.html">Accueil</a>
-                <a href="a-propos.html">À propos</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact – Widad</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
 
-  <main class="contact-section">
-    <h2>Envie de collaborer ?</h2>
-    <p>Remplis ce formulaire et je te répondrai dès que possible.</p>
+    <main class="contact-section">
+      <h2>Me contacter</h2>
+      <p>
+        Un projet de création ? Une envie de collaborer ? N'hésitez pas à me
+        contacter via le formulaire ci-dessous ou par téléphone. Je vous
+        répondrai dans les plus brefs délais.
+      </p>
 
-    <section>
-      <form class="form-contact" action="#" method="POST" onsubmit="handleFormSubmit(event)">
-        <label for="name">Nom</label>
-        <input type="text" id="name" name="name" required>
+      <div class="contact-infos">
+        <a href="mailto:ghemit.widad@gmail.com">m’envoyer un email</a>
+      </div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+      <section>
+        <h2>Formulaire de contact</h2>
+        <form class="form-contact">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" required />
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
 
-        <button type="submit" class="cta">Envoyer</button>
-      </form>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
 
-      <div id="status">Message envoyé avec succès !</div>
-      <div class="flying-envelope" id="envelope">✉️</div>
-    </section>
-  </main>
+          <button type="submit" class="cta">Envoyer</button>
+        </form>
 
-  <footer>
-    <p>© 2025 Widad</p>
-    <div>
-      <a href="#" class="lien-icone">Instagram</a>
-      <a href="#" class="lien-icone">LinkedIn</a>
-    </div>
-  </footer>
+        <!-- ✅ Message de confirmation -->
+        <div id="status">Votre message a bien été envoyé !</div>
+      </section>
+    </main>
 
-  <script>
-    function handleFormSubmit(e) {
-      e.preventDefault();
+    <footer>
+      <p>© 2025 Widad Ghemit</p>
+      <div>
+        <a href="#" class="lien-icone">LinkedIn</a>
+        <a href="#" class="lien-icone">Instagram</a>
+      </div>
+    </footer>
 
-      const envelope = document.getElementById('envelope');
-      const status = document.getElementById('status');
+    <!-- ✉️ Enveloppe animée -->
+    <div class="flying-envelope" id="flying-envelope">✉️</div>
 
-      // Déclenche l'animation
-      envelope.classList.add('animate');
-      status.classList.add('visible');
+    <!-- ⚙️ Script d’animation -->
+    <script>
+      const form = document.querySelector("form");
+      const status = document.getElementById("status");
+      const envelope = document.getElementById("flying-envelope");
 
-      // Réinitialise l'animation pour pouvoir la rejouer
-      setTimeout(() => {
-        envelope.classList.remove('animate');
-      }, 1500);
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-      // Masquer le message après 4 secondes
-      setTimeout(() => {
-        status.classList.remove('visible');
-      }, 4000);
+        envelope.classList.add("animate");
+        status.classList.add("visible");
 
-      // Réinitialiser le formulaire (facultatif)
-      e.target.reset();
-    }
-  </script>
-
-</body>
+        setTimeout(() => {
+          envelope.classList.remove("animate");
+          status.classList.remove("visible");
+          form.reset();
+        }, 2000);
+      });
+    </script>
+  </body>
 </html>
