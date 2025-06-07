@@ -69,6 +69,7 @@ nav a {
   margin-left: 30px;
   font-weight: bold;
 }
+
 nav a:first-child {
   display: inline-block;
   height: auto;
@@ -187,6 +188,11 @@ section {
   max-width: 800px;
   margin: auto;
   padding: 80px 20px;
+  background-image: url('FondContact.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
 }
 
 .contact-section h2 {
@@ -275,6 +281,11 @@ section {
   transition: opacity 0.5s ease-in-out;
   color: #a5b4fc;
 }
+
+#status.visible {
+  opacity: 1;
+}
+
 
 #status.visible {
   opacity: 1;
