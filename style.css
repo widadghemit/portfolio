@@ -1,3 +1,4 @@
+/* === RESET === */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,10 @@ body {
 a {
   color: #242424;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 em {
@@ -40,6 +45,13 @@ header,
 footer {
   background-color: white;
   padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 30px;
 }
 
 .cta {
@@ -49,10 +61,6 @@ footer {
   padding: 20px 30px;
   display: inline-block;
   margin-top: 40px;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 .cta:hover {
@@ -68,39 +76,36 @@ a:hover {
   opacity: 0.5;
 }
 
-.carre-contenu {
-  border-right: 1px solid #8e86b5;
-  border-bottom: 1px solid #8e86b5;
-  padding: 50px;
-}
-
-.carre-contenu h2 {
-  margin-top: 30px;
-}
-
-.carre-contenu ul {
-  margin-top: 30px;
-}
-
 section {
-  padding: 80px;
+  padding: 80px 20px;
 }
 
-.a-propos-main {
-  width: 50%;
-  margin: auto;
-}
-
-footer,
-nav {
+.accueil-introduction {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px;
+  gap: 100px;
 }
 
-nav a {
-  margin-left: 30px;
+.accueil-introduction img {
+  max-width: 370px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.accueil-introduction h1 {
+  margin-bottom: 40px;
+}
+
+.accueil-introduction p {
+  text-align: justify;
+  font-size: 1.1em;
+  color: #f9f8ff;
 }
 
 .accueil-photos {
@@ -122,55 +127,28 @@ nav a {
   margin-bottom: 15px;
 }
 
-.accueil-introduction {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1000px;
-  margin: auto;
-  padding: 50px;
-  gap: 100px; /* plus d'écart entre photo et texte */
-}
-
-.accueil-introduction img {
-  max-width: 370px; /* Légèrement agrandie */
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.accueil-introduction h1 {
-  margin-bottom: 40px; /* Espace entre le titre et le texte */
-}
-
-.accueil-introduction p {
-  text-align: justify; /* Justification du texte */
-  font-size: 1.1em;
-  color: #f9f8ff;
-}
-
 .portfolio-section-photos {
   background-color: white;
 }
 
 .portfolio-section-photos h2 {
-  color: #a5b4fc; /* Couleur modifiée pour lisibilité */
+  color: #a5b4fc;
   margin-bottom: 80px;
 }
 
-.grid-paysages {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px 300px;
-  gap: 15px;
-}
-
+.grid-paysages,
 .grid-portraits {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px;
   gap: 15px;
+}
+
+.grid-paysages {
+  grid-template-rows: repeat(3, 300px);
+}
+
+.grid-portraits {
+  grid-template-rows: repeat(2, 300px);
 }
 
 .grid-paysages img,
@@ -184,36 +162,32 @@ nav a {
   max-width: 800px;
   margin: auto;
   padding: 80px 20px;
+  color: #242424;
 }
 
 .contact-section h2 {
   font-size: 2.2em;
   margin-bottom: 20px;
   color: #a5b4fc;
+  text-align: center;
 }
 
-.contact-section p {
-  margin-bottom: 20px;
-  text-align: justify;
-  color: #f9f8ff;
-}
-
-.contact-infos {
+.contact-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
+  text-align: center;
 }
 
-.contact-infos a {
-  color: #a5b4fc;
-  text-decoration: none;
+.contact-card p {
+  margin: 10px 0;
+  color: #242424;
 }
 
-/* Ajout contact direct */
-.contact-infos::after {
-  content: 'Téléphone : 0651126440 | Email : ghemit.widad@gmail.com';
-  display: block;
-  margin-top: 10px;
-  color: #f9f8ff;
-  font-size: 1em;
+.contact-card a {
+  color: #8e86b5;
 }
 
 .form-contact {
@@ -237,32 +211,6 @@ nav a {
   outline: none;
   border: 1px solid #a5b4fc;
 }
-
-.contact-section section {
-  background-color: white;
-  color: #242424;
-  padding: 50px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
-  margin: auto;
-}
-
-.contact-section section h2,
-.contact-section section p,
-.contact-section section label {
-  color: #242424;
-}
-
-.contact-section section a {
-  color: #8e86b5;
-}
-
-.contact-section section a:hover {
-  text-decoration: underline;
-}
-
-/* ------ Animation d'envoi de message ------ */
 
 .flying-envelope {
   position: fixed;
@@ -292,8 +240,6 @@ nav a {
 .flying-envelope.animate {
   animation: fly-up 1.5s ease-out forwards;
 }
-
-/* ------ Message de confirmation après envoi ------ */
 
 #status {
   text-align: center;
