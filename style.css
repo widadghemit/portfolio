@@ -126,11 +126,11 @@ nav a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1000px;
   margin: auto;
   padding: 50px;
-  gap: 60px;
+  gap: 100px; /* plus d'écart entre photo et texte */
 }
 
 .accueil-introduction img {
@@ -141,7 +141,7 @@ nav a {
 }
 
 .accueil-introduction h1 {
-  margin-bottom: 30px; /* Espace entre le titre et le texte */
+  margin-bottom: 40px; /* Espace entre le titre et le texte */
 }
 
 .accueil-introduction p {
@@ -155,7 +155,7 @@ nav a {
 }
 
 .portfolio-section-photos h2 {
-  color: #242424;
+  color: #a5b4fc; /* Couleur modifiée pour lisibilité */
   margin-bottom: 80px;
 }
 
@@ -179,10 +179,6 @@ nav a {
   height: 100%;
   object-fit: cover;
 }
-
-
-
-
 
 .contact-section {
   max-width: 800px;
@@ -209,6 +205,15 @@ nav a {
 .contact-infos a {
   color: #a5b4fc;
   text-decoration: none;
+}
+
+/* Ajout contact direct */
+.contact-infos::after {
+  content: 'Téléphone : 0651126440 | Email : ghemit.widad@gmail.com';
+  display: block;
+  margin-top: 10px;
+  color: #f9f8ff;
+  font-size: 1em;
 }
 
 .form-contact {
