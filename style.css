@@ -15,6 +15,7 @@ body {
   flex-direction: column;
 }
 
+/* Annule le violet pour la page Contact et applique un fond blanc */
 body.page-contact {
   background-color: white;
 }
@@ -46,7 +47,6 @@ p, li {
 
 .lien-violet {
   color: #a5b4fc !important;
-}
 
 /* *** Header & Footer *** */
 header, footer {
@@ -108,13 +108,13 @@ section {
 /* === ACCUEIL === */
 .accueil-introduction {
   display: flex;
-  flex-direction: row; /* texte à gauche, image à droite */
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   width: 80%;
   margin: auto;
   padding: 50px;
-  gap: 150px;
+  gap: 150px; /* espace augmenté */
 }
 
 .accueil-introduction img {
@@ -126,7 +126,7 @@ section {
 }
 
 .accueil-introduction .texte-intro {
-  width: 50%;
+  width: 50%; /* texte plus large */
 }
 
 .accueil-introduction h1 {
@@ -137,7 +137,7 @@ section {
   text-align: justify;
   color: #f9f8ff;
   line-height: 1.7;
-  margin-bottom: 40px;
+  margin-bottom: 40px; /* plus d'espace avec le bouton */
 }
 
 .accueil-photos {
@@ -219,6 +219,7 @@ body.page-contact main.contact-section {
   color: #a5b4fc;
 }
 
+/* Texte d’introduction */
 .contact-card > p {
   color: #1f2039;
 }
@@ -289,4 +290,4 @@ body.page-contact main.contact-section {
 }
 #status.visible {
   opacity: 1;
-}
+}               
