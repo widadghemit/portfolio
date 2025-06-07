@@ -8,7 +8,7 @@
 body {
   font-family: 'Manrope', sans-serif;
   font-size: 1em;
-  background-color: white;
+  background-color: #1f2039;
 }
 
 a {
@@ -68,6 +68,23 @@ nav div {
 nav a {
   margin-left: 30px;
   font-weight: bold;
+  position: relative;
+  color: #242424;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #8e86b5;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 nav a:first-child {
@@ -185,17 +202,14 @@ section {
 
 /* Contact */
 .contact-section {
-  width: 100%;
+  max-width: 800px;
+  margin: auto;
   padding: 80px 20px;
   background-image: url('FondContact.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: calc(100vh - 160px); /* à adapter si header/footer + grands/petits */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  border-radius: 15px;
 }
 
 .contact-section h2 {
