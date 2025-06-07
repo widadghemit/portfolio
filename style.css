@@ -45,6 +45,9 @@ p, li {
   color: #f9f8ff;
 }
 
+.lien-violet {
+  color: #a5b4fc !important;
+
 /* *** Header & Footer *** */
 header, footer {
   background-color: white;
