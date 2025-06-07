@@ -5,15 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact – Widad</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script>
+      function showConfirmation(event) {
+        event.preventDefault();
+
+        const envelope = document.querySelector(".flying-envelope");
+        const status = document.getElementById("status");
+
+        envelope.classList.add("animate");
+
+        setTimeout(() => {
+          envelope.classList.remove("animate");
+          status.classList.add("visible");
+          status.innerText = "Votre message a bien été envoyé !";
+        }, 1500);
+      }
+    </script>
   </head>
   <body>
     <header>
+      <h1>Contact</h1>
       <nav>
         <a href="index.html">Accueil</a>
         <a href="portfolio.html">Portfolio</a>
@@ -22,20 +36,21 @@
     </header>
 
     <main class="contact-section">
-      <h2>Me contacter</h2>
-      <p>
-        Un projet de création ? Une envie de collaborer ? N'hésitez pas à me
-        contacter via le formulaire ci-dessous ou par téléphone. Je vous
-        répondrai dans les plus brefs délais.
-      </p>
-
-      <div class="contact-infos">
-        <a href="mailto:ghemit.widad@gmail.com">m’envoyer un email</a>
-      </div>
-
       <section>
-        <h2>Formulaire de contact</h2>
-        <form class="form-contact">
+        <h2>Envie de discuter ?</h2>
+        <p>
+          Je suis ravie d’échanger avec vous ! Que ce soit pour une opportunité,
+          une collaboration ou simplement pour dire bonjour, n’hésitez pas à
+          m’écrire.
+        </p>
+
+        <div class="contact-infos">
+          <p>📞 06 51 12 64 40</p>
+          <p>📧 <a href="mailto:ghemit.widad@gmail.com">ghemit.widad@gmail.com</a></p>
+          <p>🔗 <a href="https://www.linkedin.com/in/widadghemit" target="_blank">Mon profil LinkedIn</a></p>
+        </div>
+
+        <form class="form-contact" onsubmit="showConfirmation(event)">
           <label for="nom">Nom</label>
           <input type="text" id="nom" name="nom" required />
 
@@ -46,42 +61,18 @@
           <textarea id="message" name="message" rows="5" required></textarea>
 
           <button type="submit" class="cta">Envoyer</button>
+          <div id="status"></div>
         </form>
-
-        <!-- ✅ Message de confirmation -->
-        <div id="status">Votre message a bien été envoyé !</div>
+        <div class="flying-envelope">✉️</div>
       </section>
     </main>
 
     <footer>
       <p>© 2025 Widad Ghemit</p>
       <div>
-        <a href="#" class="lien-icone">LinkedIn</a>
-        <a href="#" class="lien-icone">Instagram</a>
+        <a class="lien-icone" href="mailto:ghemit.widad@gmail.com">📧</a>
+        <a class="lien-icone" href="https://www.linkedin.com/in/widadghemit" target="_blank">LinkedIn</a>
       </div>
     </footer>
-
-    <!-- ✉️ Enveloppe animée -->
-    <div class="flying-envelope" id="flying-envelope">✉️</div>
-
-    <!-- ⚙️ Script d’animation -->
-    <script>
-      const form = document.querySelector("form");
-      const status = document.getElementById("status");
-      const envelope = document.getElementById("flying-envelope");
-
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        envelope.classList.add("animate");
-        status.classList.add("visible");
-
-        setTimeout(() => {
-          envelope.classList.remove("animate");
-          status.classList.remove("visible");
-          form.reset();
-        }, 2000);
-      });
-    </script>
   </body>
 </html>
