@@ -9,10 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body class="page-contact">
 
-  <body class="page-contact">
-    
   <header>
     <nav aria-label="Menu principal">
       <a href="index.html">
@@ -27,8 +25,8 @@
     </nav>
   </header>
 
-  <main>
-    <section class="contact-section">
+  <main class="contact-section">
+    <div class="contact-card">
       <h1>Envie de discuter ?</h1>
       <p>
         Je suis ravie d’échanger avec vous ! Que ce soit pour une opportunité,
@@ -42,24 +40,22 @@
         <p>🔗 <a href="https://www.linkedin.com/in/widadghemit" target="_blank" rel="noopener noreferrer">Mon profil LinkedIn</a></p>
       </div>
 
-      <div class="contact-card">
-        <form class="form-contact" onsubmit="showConfirmation(event)" aria-label="Formulaire de contact">
-          <label for="nom">Nom</label>
-          <input type="text" id="nom" name="nom" required />
+      <form class="form-contact" onsubmit="showConfirmation(event)" aria-label="Formulaire de contact">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required />
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-          <button type="submit" class="cta">Envoyer</button>
-          <div id="status" role="alert" aria-live="polite"></div>
-        </form>
-      </div>
+        <button type="submit" class="cta">Envoyer</button>
+        <div id="status" role="alert" aria-live="polite"></div>
+      </form>
+    </div>
 
-      <div class="flying-envelope" aria-hidden="true">✉️</div>
-    </section>
+    <div class="flying-envelope" aria-hidden="true">✉️</div>
   </main>
 
   <footer>
@@ -77,16 +73,14 @@
   <script>
     function showConfirmation(event) {
       event.preventDefault();
-
       const envelope = document.querySelector(".flying-envelope");
       const status = document.getElementById("status");
-
       envelope.classList.add("animate");
-
       setTimeout(() => {
         envelope.classList.remove("animate");
         status.classList.add("visible");
         status.innerText = "Votre message a bien été envoyé !";
+        event.target.reset();
       }, 1500);
     }
   </script>
