@@ -262,3 +262,48 @@ nav a {
   text-decoration: underline;
 }
 
+/* ------ Animation d'envoi de message ------ */
+
+.flying-envelope {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+  animation: none;
+  transition: transform 0.3s ease;
+  color: #a5b4fc;
+}
+
+@keyframes fly-up {
+  0% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-300px);
+    opacity: 0;
+  }
+}
+
+.flying-envelope.animate {
+  animation: fly-up 1.5s ease-out forwards;
+}
+
+/* ------ Message de confirmation après envoi ------ */
+
+#status {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  color: #a5b4fc;
+}
+
+#status.visible {
+  opacity: 1;
+}
