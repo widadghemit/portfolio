@@ -15,6 +15,20 @@ body {
   flex-direction: column;
 }
 
+/* Annule le violet pour la page Contact et applique un fond blanc par défaut */
+body.page-contact {
+  background-color: white;
+}
+
+/* Applique l’image de fond fixe à tout l’espace entre header et footer */
+body.page-contact main.contact-section {
+  background-image: url('FondContact.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 /* LIENS ET TEXTES */
 a {
   color: #242424;
@@ -50,6 +64,7 @@ header, footer {
 }
 nav {
   display: flex;
+  justify-content: space-between; /* logo left, links right */
   align-items: center;
   width: 100%;
 }
@@ -176,8 +191,9 @@ section {
 
 /* === CONTACT === */
 main.contact-section {
+  background-attachment: fixed;
   flex: 1;
-  background-image: url('FondContact.jpeg');
+  background-image: url('FondContact.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
