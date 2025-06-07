@@ -5,10 +5,16 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Manrope', sans-serif;
   font-size: 1em;
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -41,6 +47,7 @@ li {
   color: #f9f8ff;
 }
 
+/* HEADER & FOOTER */
 header,
 footer {
   background-color: white;
@@ -75,162 +82,66 @@ nav a:first-child {
   height: auto;
 }
 
-/* CTA bouton */
-.cta {
-  background: linear-gradient(#8e86b5, #acaeed);
-  color: white;
-  border-radius: 50px;
-  padding: 20px 30px;
-  display: inline-block;
-  margin-top: 40px;
-}
-
-.cta:hover {
-  background: linear-gradient(#696484, #8788ba);
-  text-decoration: none;
-}
-
-.lien-icone {
-  margin-left: 30px;
-}
-
-.lien-icone:hover {
-  opacity: 0.5;
-}
-
-section {
-  padding: 80px 20px;
-}
-
-/* Section introduction */
-.accueil-introduction {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1000px;
-  margin: auto;
-  padding: 50px;
-  gap: 100px;
-}
-
-.accueil-introduction img {
-  max-width: 370px;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.accueil-introduction h1 {
-  margin-bottom: 40px;
-}
-
-.accueil-introduction p {
-  text-align: justify;
-  font-size: 1.1em;
-  color: #f9f8ff;
-}
-
-/* Section photos accueil */
-.accueil-photos {
-  background-color: white;
-  padding: 80px;
-}
-
-.accueil-photos h2 {
-  color: #242424;
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.accueil-photos div {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  justify-content: center;
-  margin-bottom: 15px;
-}
-
-/* Portfolio */
-.portfolio-section-photos {
-  background-color: white;
-}
-
-.portfolio-section-photos h2 {
-  color: #a5b4fc;
-  margin-bottom: 80px;
-}
-
-.grid-paysages,
-.grid-portraits {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
-}
-
-.grid-paysages {
-  grid-template-rows: repeat(3, 300px);
-}
-
-.grid-portraits {
-  grid-template-rows: repeat(2, 300px);
-}
-
-.grid-paysages img,
-.grid-portraits img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Contact */
-.contact-section {
-  width: 100%;
-  min-height: calc(100vh - 160px); /* 100vh - (header + footer height) */
-  margin: 0;
-  padding: 80px 20px;
+/* MAIN BACKGROUND IMAGE */
+main {
+  flex: 1;
   background-image: url('FondContact.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: transparent;
+  min-height: calc(100vh - 160px);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-
-.contact-section h2 {
-  font-size: 2.2em;
-  margin-bottom: 20px;
-  color: #a5b4fc;
-  text-align: center;
+/* CONTACT SECTION */
+.contact-section {
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .contact-card {
-  background-color: white;
-  padding: 40px;
+  background-color: rgba(255,255,255,0.9);
+  padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
-  color: #242424;
-  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
 }
 
-.contact-card p {
+.contact-card h1 {
+  margin-bottom: 20px;
+  color: #a5b4fc;
+}
+
+.contact-infos p {
   margin: 10px 0;
   color: #242424;
 }
 
-.contact-card a {
+.contact-infos a {
   color: #8e86b5;
+  text-decoration: none;
+}
+
+.contact-infos a:hover {
+  text-decoration: underline;
 }
 
 .form-contact {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 20px;
+}
+
+.form-contact label {
+  font-weight: bold;
+  color: #242424;
 }
 
 .form-contact input,
@@ -249,6 +160,21 @@ section {
   border: 1px solid #a5b4fc;
 }
 
+.cta {
+  background: linear-gradient(#8e86b5, #acaeed);
+  color: white;
+  border-radius: 50px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background: linear-gradient(#696484, #8788ba);
+}
+
 /* Enveloppe animation */
 .flying-envelope {
   position: fixed;
@@ -259,20 +185,13 @@ section {
   opacity: 0;
   pointer-events: none;
   z-index: 999;
-  animation: none;
   transition: transform 0.3s ease;
   color: #a5b4fc;
 }
 
 @keyframes fly-up {
-  0% {
-    transform: translateX(-50%) translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-50%) translateY(-300px);
-    opacity: 0;
-  }
+  0% { transform: translateX(-50%) translateY(0); opacity: 1; }
+  100% { transform: translateX(-50%) translateY(-300px); opacity: 0; }
 }
 
 .flying-envelope.animate {
