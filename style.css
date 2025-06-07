@@ -43,7 +43,6 @@ h2 {
 p, li {
   font-size: 1.1em;
   color: #f9f8ff;
-  text-align: justify;
 }
 
 /* *** Header & Footer *** */
@@ -82,8 +81,6 @@ nav a {
   font-weight: bold;
   transition: background 0.3s ease;
   align-self: flex-start;
-  display: inline-block;
-  margin-top: 30px; /* Ajouté pour espacer le texte du bouton */
 }
 .cta:hover {
   background: linear-gradient(#696484, #8788ba);
@@ -105,18 +102,14 @@ section {
 /* === ACCUEIL === */
 .accueil-introduction {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 100px;
-  width: 80%;
+  width: 50%;
   margin: auto;
-  padding: 80px 0;
-}
-.accueil-introduction div {
-  flex: 2;
+  padding: 50px;
+  gap: 100px;
 }
 .accueil-introduction img {
-  flex: 1;
   max-width: 370px;
   width: 100%;
   height: auto;
@@ -126,10 +119,9 @@ section {
   margin-bottom: 40px;
 }
 .accueil-introduction p {
+  text-align: justify;
   color: #f9f8ff;
 }
-
-/* === ACCUEIL PHOTOS === */
 .accueil-photos {
   background-color: white;
   padding: 80px;
@@ -192,23 +184,28 @@ body.page-contact main.contact-section {
   justify-content: flex-end;
   padding: 40px;
 }
+
 .contact-card {
   background-color: rgba(255,255,255,0.9);
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  width: 66%;
+  width: 66%; /* 2/3 de la largeur */
   max-width: none;
   text-align: left;
   margin-right: 5%;
 }
+
 .contact-card h1 {
   margin-bottom: 20px;
   color: #a5b4fc;
 }
+
+/* Texte d’introduction */
 .contact-card > p {
   color: #1f2039;
 }
+
 .contact-infos p {
   margin: 10px 0;
   color: #242424;
@@ -219,6 +216,7 @@ body.page-contact main.contact-section {
 .contact-infos a:hover {
   text-decoration: underline;
 }
+
 .form-contact {
   display: flex;
   flex-direction: column;
@@ -243,6 +241,7 @@ body.page-contact main.contact-section {
   outline: none;
   border: 1px solid #a5b4fc;
 }
+
 .flying-envelope {
   position: fixed;
   bottom: 50px;
@@ -262,6 +261,7 @@ body.page-contact main.contact-section {
 .flying-envelope.animate {
   animation: fly-up 1.5s ease-out forwards;
 }
+
 #status {
   text-align: center;
   font-weight: bold;
