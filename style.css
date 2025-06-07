@@ -15,6 +15,22 @@ a {
   text-decoration: none;
 }
 
+a.lien-gradient {
+  color: #a5b4fc;
+  background-image: linear-gradient(90deg, #a5b4fc, #8e86b5);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: #a5b4fc;
+  transition: background-position 0.4s ease, -webkit-text-fill-color 0.4s ease;
+}
+
+a.lien-gradient:hover {
+  background-position: right center;
+  -webkit-text-fill-color: transparent;
+}
+
 em {
   color: #a5b4fc;
   font-style: normal;
@@ -134,7 +150,7 @@ nav a {
 }
 
 .accueil-introduction img {
-  max-width: 350px;
+  max-width: 400px;
   width: 100%;
   height: auto;
   object-fit: contain;
