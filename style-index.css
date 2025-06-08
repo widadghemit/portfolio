@@ -74,6 +74,8 @@
   font-size: 2em;
   color: black; 
   text-align: center;
+  margin-bottom: 80px;
+  font-family: 'Manrope', sans-serif;
 }
 
 .accueil-photos > div {
