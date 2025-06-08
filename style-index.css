@@ -8,6 +8,7 @@
   margin: auto;
   flex-wrap: wrap;
   min-height: 600px; /* Pour que ce soit bien centré */
+  gap: 120px; /* => espace entre l'image et le texte */
 }
 
 .texte-intro {
@@ -28,7 +29,7 @@
 .texte-intro p {
   font-size: 1.2em;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .texte-intro .lien-violet {
