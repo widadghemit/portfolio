@@ -21,7 +21,7 @@
 .texte-intro h1 {
   font-family: 'Herr Von Muellerhoff', cursive;
   font-size: 5em;
-  color: #6826a6;
+  color: #a5b4fc;
   margin: 0 0 20px 0;
 }
 
@@ -32,12 +32,12 @@
 }
 
 .texte-intro .lien-violet {
-  color: #6826a6;
+  color: #a5b4fc;
   text-decoration: underline;
 }
 
 .cta {
-  background-color: #6826a6;
+  background-color: #a5b4fc;
   color: white;
   padding: 12px 24px;
   border-radius: 25px;
@@ -71,7 +71,7 @@
 
 .accueil-photos h2 {
   font-size: 2em;
-  color: black; /* ✅ Titre en noir comme demandé */
+  color: black; 
   text-align: center;
 }
 
