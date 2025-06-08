@@ -35,9 +35,9 @@
 
 /* Curseur clignotant */
 .curseur {
-  color: #a5b4fc;
+  color: #ffffff;
   font-weight: bold;
-  animation: clignote 1s infinite;
+  animation: clignote 1s steps(1) infinite;
 }
 
 @keyframes clignote {
