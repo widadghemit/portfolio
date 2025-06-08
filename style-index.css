@@ -25,27 +25,12 @@
   color: #a5b4fc;
   margin: 0 0 20px 0;
 }
-.machine-ecrire {
+/* === Apparition douce des lettres === */
+.apparition-lettres {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 3.5em;
   color: #a5b4fc;
-  display: flex;
-  align-items: center;
 }
-
-/* Curseur clignotant */
-.curseur {
-  color: #ffffff;
-  font-weight: bold;
-  animation: clignote 1s steps(1) infinite;
-}
-
-@keyframes clignote {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
 
 .texte-intro p {
   font-size: 1.2em;
