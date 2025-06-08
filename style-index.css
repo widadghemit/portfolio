@@ -1,14 +1,14 @@
 /* === Accueil - Introduction === */
 .accueil-introduction {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 50px 20px;
-  max-width: 1200px;
+  width: 80%;
   margin: auto;
   flex-wrap: wrap;
   min-height: 450px; /* Pour que ce soit bien centré */
-  gap: 120px; /* => espace entre l'image et le texte */
+  gap: 150px; /* => espace entre l'image et le texte */
+  padding: 50px;
 }
 
 .texte-intro {
