@@ -1,17 +1,21 @@
 /* === Accueil - Introduction === */
 .accueil-introduction {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 80px 20px;
   max-width: 1200px;
   margin: auto;
   flex-wrap: wrap;
+  min-height: 600px; /* Pour que ce soit bien centré */
 }
 
 .texte-intro {
   flex: 1;
   max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .texte-intro h1 {
@@ -40,6 +44,7 @@
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
+  margin-top: 20px; /* ✅ Espacement ajouté ici */
 }
 
 .cta:hover {
@@ -66,6 +71,8 @@
 
 .accueil-photos h2 {
   font-size: 2em;
+  color: black; /* ✅ Titre en noir comme demandé */
+  text-align: center;
 }
 
 .accueil-photos > div {
