@@ -52,6 +52,22 @@
   background-color: #511f80;
 }
 
+/* Apparition retardée */
+.apparition-retardee {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRetardee 1s ease-out forwards;
+  animation-delay: 2.7s; /* Doit être légèrement + long que la machine à écrire */
+}
+
+/* Animation d'apparition */
+@keyframes fadeInRetardee {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .accueil-introduction img {
   max-width: 370px;
   width: 100%;
