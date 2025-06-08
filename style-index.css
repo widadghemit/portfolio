@@ -1,31 +1,57 @@
-/* === Accueil - Section Introduction === */
+/* === Accueil - Introduction === */
 .accueil-introduction {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding: 60px 20px;
-  gap: 50px;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
 }
+
 .texte-intro {
-  flex: 1 1 400px;
+  flex: 1;
   max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
+
+.texte-intro h1 {
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-size: 5em;
+  color: #6826a6;
+  margin: 0 0 20px 0;
+}
+
 .texte-intro p {
+  font-size: 1.2em;
   line-height: 1.6;
+  margin-bottom: 20px;
 }
+
 .texte-intro .lien-violet {
-  color: #a5b4fc;
-  font-weight: bold;
+  color: #6826a6;
+  text-decoration: underline;
 }
+
+.cta {
+  background-color: #6826a6;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta:hover {
+  background-color: #511f80;
+}
+
 .accueil-introduction img {
-  flex: 1 1 300px;
   max-width: 400px;
+  width: 100%;
   height: auto;
   border-radius: 20px;
+  margin-top: 40px;
 }
 
 /* === Accueil - Section Photos === */
@@ -34,25 +60,36 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  background-color: #2c2e55;
+  background-color: white;
   padding: 60px 20px;
 }
+
 .accueil-photos h2 {
   font-size: 2em;
 }
+
 .accueil-photos > div {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
+
+.accueil-photos a {
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.accueil-photos a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
 .accueil-photos img {
   width: 200px;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
+  display: block;
 }
-
-
-
-
