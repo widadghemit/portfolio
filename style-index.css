@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   min-height: 450px; /* Pour que ce soit bien centré */
   gap: 150px; /* => espace entre l'image et le texte */
-  padding: 50px;
+  padding: 40px;
 }
 
 .texte-intro {
