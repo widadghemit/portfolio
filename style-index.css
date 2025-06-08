@@ -7,7 +7,7 @@
   max-width: 1200px;
   margin: auto;
   flex-wrap: wrap;
-  min-height: 600px; /* Pour que ce soit bien centré */
+  min-height: 450px; /* Pour que ce soit bien centré */
   gap: 120px; /* => espace entre l'image et le texte */
 }
 
