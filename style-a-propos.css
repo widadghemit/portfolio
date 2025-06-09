@@ -19,7 +19,9 @@
   text-align: justify;
 }
 
-body { background-color: white !important;
+body {
+  background-color: white !important;
+  color: black !important;
 }
 
 header {
