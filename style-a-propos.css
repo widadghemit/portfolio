@@ -2,5 +2,12 @@
 .a-propos-main {
   width: 50%;
   margin: auto;
-  background-color: white!important;
+}
+
+body {
+  background-color: white !important;
+}
+
+p {
+  color: black !important;
 }
