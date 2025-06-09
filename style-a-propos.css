@@ -38,4 +38,65 @@ header {
   height: 2px;
   background-color: #1f2039; /* couleur de la frise */
   margin: 40px auto;         /* centre horizontalement + espace vertical */
+  position: relative;
+  animation: fadeInLine 1s ease-in forwards;
+}
+
+.timeline-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 40px 20px;
+}
+
+.timeline-items {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.timeline-items.top {
+  transform: translateY(-50px);
+}
+
+.timeline-items.bottom {
+  transform: translateY(50px);
+}
+
+.timeline-item {
+  text-align: center;
+  width: 120px;
+  opacity: 0;
+  animation: fadeInItem 1s ease forwards;
+}
+
+.timeline-items.top .timeline-item:nth-child(1) { animation-delay: 1s; }
+.timeline-items.top .timeline-item:nth-child(2) { animation-delay: 1.2s; }
+.timeline-items.top .timeline-item:nth-child(3) { animation-delay: 1.4s; }
+.timeline-items.top .timeline-item:nth-child(4) { animation-delay: 1.6s; }
+
+.timeline-items.bottom .timeline-item:nth-child(1) { animation-delay: 1.8s; }
+.timeline-items.bottom .timeline-item:nth-child(2) { animation-delay: 2s; }
+.timeline-items.bottom .timeline-item:nth-child(3) { animation-delay: 2.2s; }
+.timeline-items.bottom .timeline-item:nth-child(4) { animation-delay: 2.4s; }
+.timeline-items.bottom .timeline-item:nth-child(5) { animation-delay: 2.6s; }
+.timeline-items.bottom .timeline-item:nth-child(6) { animation-delay: 2.8s; }
+
+.timeline-item .date {
+  font-weight: bold;
+  color: #a5b4fc;
+  display: block;
+  margin-bottom: 5px;
+}
+
+@keyframes fadeInLine {
+  0% { width: 0; opacity: 0; }
+  100% { width: 100%; opacity: 1; }
+}
+
+@keyframes fadeInItem {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
