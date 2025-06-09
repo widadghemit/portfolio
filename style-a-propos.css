@@ -78,7 +78,7 @@ header {
 
 /* Donne une marge supplémentaire aux éléments du bas */
 .timeline-items.bottom .timeline-item {
-  margin-bottom: 20px; /* Augmente la distance par rapport à la ligne */
+  margin-top: 50px; /* Augmente la distance par rapport à la ligne */
 }
 
 /* Uniformise la couleur du texte en noir */
