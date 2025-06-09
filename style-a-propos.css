@@ -33,36 +33,40 @@ header {
   border-bottom: 1px solid rgba(31, 32, 57, 0.2);
 }
 
-.timeline-line {
-  width: 80vw;              /* 80% de la largeur de la fenêtre */
-  height: 2px;
-  background-color: #1f2039; /* couleur de la frise */
-  margin: 40px auto;         /* centre horizontalement + espace vertical */
-  position: relative;
-  animation: fadeInLine 1s ease-in forwards;
-}
-
+/* === Frise chronologique === */
 .timeline-container {
   position: relative;
   width: 100%;
   max-width: 1200px;
   margin: 80px auto;
-  padding: 40px 20px;
+  padding: 80px 20px;
+  height: 300px; /* Ajuste si nécessaire pour accueillir tous les éléments */
+}
+
+.timeline-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #1f2039;
+  transform: translateY(-50%);
+  animation: fadeInLine 1s ease-in forwards;
 }
 
 .timeline-items {
   display: flex;
   justify-content: space-between;
-  position: relative;
+  position: absolute;
   width: 100%;
 }
 
 .timeline-items.top {
-  transform: translateY(-50px);
+  top: 0;
 }
 
 .timeline-items.bottom {
-  transform: translateY(50px);
+  bottom: 0;
 }
 
 .timeline-item {
@@ -91,6 +95,11 @@ header {
   margin-bottom: 5px;
 }
 
+.timeline-item strong {
+  color: black;
+}
+
+/* === Animations === */
 @keyframes fadeInLine {
   0% { width: 0; opacity: 0; }
   100% { width: 100%; opacity: 1; }
