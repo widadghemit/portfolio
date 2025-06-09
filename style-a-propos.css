@@ -40,7 +40,7 @@ body {
 /* === Frise chronologique === */
 .timeline-container {
   position: relative;
-  width: 100vw;
+  width: 100%;
   padding: 140px 20px; /* marges haut/bas augmentées */
   margin: 0 auto; /* centre horizontalement */
   background-color: white;
