@@ -52,12 +52,17 @@ body {
   position: absolute;
   top: 50%;
   left: 0;
-  width: 100%;
+  right: 0;
+  margin: 0 auto;
+  max-width: 100%;
   height: 2px;
   background-color: #1f2039;
   transform: translateY(-50%);
   animation: fadeInLine 2.5s ease-in forwards;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
+
 
 .timeline-items {
   display: flex;
