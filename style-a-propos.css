@@ -12,7 +12,10 @@
 }
 
 .a-propos-introduction h1 {
-  color: #1f2039 !important;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5em;
+  color: #a5b4fc;
+  margin: 0 0 20px 0;
 }
 
 .a-propos-introduction p {
