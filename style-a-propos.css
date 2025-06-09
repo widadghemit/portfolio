@@ -42,7 +42,7 @@ header {
 }
 
 .timeline-wave {
-  width: 80%;
+  width: 80vw;
   height: 250px;
   display: block;
   margin-inline: auto;
