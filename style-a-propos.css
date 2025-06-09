@@ -45,7 +45,8 @@ header {
   width: 80%;
   height: 250px;
   display: block;
-  margin-inline: auto; /* centré horizontalement */
+  margin-inline: auto;
   object-fit: contain;
+  transform: translateX(-20px); /* décale vers la gauche */
 }
 
