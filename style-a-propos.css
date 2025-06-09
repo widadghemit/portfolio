@@ -9,6 +9,11 @@
   background-color: #1f2039 !important;
   color: white !important;
 }
+body {
+  background-color: #1f2039; /* Remplace cette couleur par celle que tu veux */
+  margin: 0;
+  padding: 0;
+}
 
 .a-propos-introduction h1 {
   font-family: 'Bebas Neue', sans-serif;
