@@ -1,19 +1,67 @@
 /* === À PROPOS === */
 .a-propos-main {
-  width: 50%;
+  width: 80%;
   margin: auto;
-  padding: 0 50px; /* 50px à gauche et à droite */
+  padding: 40px;
 }
 
 body {
-  background-color: white !important;
+  background-color: white;
+  font-family: 'Manrope', sans-serif;
 }
 
 p {
-  color: black !important;
+  color: black;
 }
 
+/* Header plus léger */
 header {
-  margin-bottom: 20px !important;
-  border-bottom: 1px solid rgba(31, 32, 57, 0.2) !important; /* plus léger, plus élégant */
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(31, 32, 57, 0.2);
+}
+
+/* === Introduction À Propos === */
+.a-propos-introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 450px;
+  gap: 30px;
+}
+
+.a-propos-introduction h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5em;
+  color: #1f2039;
+  margin-bottom: 10px;
+}
+
+/* Bloc texte centré comme index */
+.carre-contenu {
+  max-width: 600px;
+  background-color: white;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.carre-contenu p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* CTA (bouton) */
+.cta {
+  background-color: #a5b4fc;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta:hover {
+  background-color: #511f80;
 }
