@@ -32,11 +32,6 @@ body {
   color: black !important;
 }
 
-header {
-  margin-bottom: 20px;
-  border-bottom: 1px solid rgba(31, 32, 57, 0.2);
-}
-
 /* === Frise chronologique === */
 .timeline-container {
   position: relative;
