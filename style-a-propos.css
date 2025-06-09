@@ -2,6 +2,7 @@
 .a-propos-main {
   width: 50%;
   margin: auto;
+  padding: 0 50px; /* 50px à gauche et à droite */
 }
 
 body {
