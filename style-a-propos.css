@@ -34,6 +34,12 @@ header {
 }
 
 
+.timeline h3,
+.timeline p,
+.timeline span {
+  color: #000 !important;
+}
+
 
 /* --- Frise chronologique --- */
 
