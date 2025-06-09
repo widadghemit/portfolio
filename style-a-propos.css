@@ -76,6 +76,22 @@ header {
   animation: fadeInItem 1s ease forwards;
 }
 
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: -25px; /* pour les éléments du bas */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 20px;
+  background-color: #1f2039;
+  z-index: 2;
+}
+
+.timeline-items.top .timeline-item::before {
+  top: auto;
+  bottom: -25px; /* pour les éléments du haut */
+}
 /* Donne une marge supplémentaire aux éléments du bas */
 .timeline-items.bottom .timeline-item {
   margin-top: 50px; /* Augmente la distance par rapport à la ligne */
