@@ -8,7 +8,15 @@
 .a-propos-introduction {
   background-color: #1f2039 !important;
   color: white !important;
+  padding: 40px 0;
 }
+
+.a-propos-introduction .carre-contenu {
+  margin: 0 auto;
+  padding: 0 20px; /* Garde de l'espace à gauche/droite si besoin */
+  max-width: 1200px; /* Pour éviter que le texte soit trop large sur grand écran */
+}
+
 body {
   background-color: #1f2039; /* Remplace cette couleur par celle que tu veux */
   margin: 0;
