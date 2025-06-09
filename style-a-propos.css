@@ -35,18 +35,16 @@ header {
 
 /* === FRISE CHRONOLOGIQUE / WAVE SVG === */
 .timeline-section {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
   position: relative;
-  margin: 40px auto;
-  padding: 0;
-  width: 100%;
   z-index: 1;
+  padding: 0;
 }
 
 .timeline-wave {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+  width: 80%;
+  height: 250px; /* ajuste selon ton SVG */
+  object-fit: cover;
 }
-
