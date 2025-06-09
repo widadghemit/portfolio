@@ -11,3 +11,7 @@ body {
 p {
   color: black !important;
 }
+
+header {
+  border-bottom: 2px solid #1f2039;
+}
