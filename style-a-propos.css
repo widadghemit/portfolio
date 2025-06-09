@@ -41,6 +41,7 @@ header {
   margin: 80px auto;
   padding: 80px 20px;
   height: 300px; /* Ajuste si nécessaire pour accueillir tous les éléments */
+  background-color: white;
 }
 
 .timeline-line {
