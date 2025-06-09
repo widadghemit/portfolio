@@ -33,19 +33,9 @@ header {
   border-bottom: 1px solid rgba(31, 32, 57, 0.2);
 }
 
-.timeline-section {
-  text-align: center;
-  margin: 40px 0;
-  position: relative;
-  z-index: 1;
-  padding: 0;
+.timeline-line {
+  width: 80vw;              /* 80% de la largeur de la fenêtre */
+  height: 2px;
+  background-color: #1f2039; /* couleur de la frise */
+  margin: 40px auto;         /* centre horizontalement + espace vertical */
 }
-
-.timeline-wave {
-  width: 100vw;
-  height: 250px;
-  display: block;
-  margin-inline: auto;
-  object-fit: contain;
-}
-
