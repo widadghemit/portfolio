@@ -44,10 +44,7 @@ Je cherche une entreprise où l’on valorise l’autonomie, la curiosité et l�
                 <a href="" class="cta">VOIR MON PORTFOLIO</a>
             </div>
         </section>
-    </main>
 
-    
-  <!-- ✅ Frise chronologique -->
         <section class="frise-container">
             <h2>Mon parcours</h2>
             <div class="timeline">
@@ -55,10 +52,17 @@ Je cherche une entreprise où l’on valorise l’autonomie, la curiosité et l�
 
                 <!-- Expériences académiques -->
                 <div class="evenement haut">
-                    <span class="date">2021-2023</span>
+                    <span class="date">2016-2019</span>
                     <div class="contenu">
-                        <h3>Licence de Droit (non terminée)</h3>
-                        <p>Aisance orale et écrite développée.</p>
+                        <h3>Baccalauréat ES, spécialité Mathématiques</h3>
+                        <p>Diplôme obtenu en 2019.</p>
+                    </div>
+                </div>
+                <div class="evenement haut">
+                    <span class="date">2019-2022</span>
+                    <div class="contenu">
+                        <h3>Licence de Droit (niveau L2)</h3>
+                        <p>Développement de compétences en analyse et rédaction.</p>
                     </div>
                 </div>
                 <div class="evenement haut">
@@ -69,33 +73,54 @@ Je cherche une entreprise où l’on valorise l’autonomie, la curiosité et l�
                     </div>
                 </div>
                 <div class="evenement haut">
-                    <span class="date">2024-2025</span>
+                    <span class="date">2025</span>
                     <div class="contenu">
                         <h3>Bachelor Business & Marketing Digital (IDRAC)</h3>
-                        <p>À la recherche d'une alternance dès juillet 2025.</p>
+                        <p>Rentrée prévue en septembre 2025.</p>
                     </div>
                 </div>
 
                 <!-- Expériences professionnelles -->
                 <div class="evenement bas">
-                    <span class="date">2021-2023</span>
+                    <span class="date">2019-2021</span>
+                    <div class="contenu">
+                        <h3>Cours particuliers de mathématiques</h3>
+                        <p>Suivi et accompagnement d'élèves au collège et lycée.</p>
+                    </div>
+                </div>
+                <div class="evenement bas">
+                    <span class="date">2020-2022</span>
                     <div class="contenu">
                         <h3>Préparatrice de commandes – Super U</h3>
                         <p>2 ans d’expérience : rigueur, rapidité et autonomie.</p>
                     </div>
                 </div>
                 <div class="evenement bas">
-                    <span class="date">2023</span>
+                    <span class="date">Septembre - Octobre 2021</span>
                     <div class="contenu">
-                        <h3>Stage – UNDIZ (Atlantis)</h3>
-                        <p>Relation client et merchandising.</p>
+                        <h3>Stage – Cabinet d’avocat (Droit international privé)</h3>
+                        <p>Observation et appui administratif juridique.</p>
                     </div>
                 </div>
                 <div class="evenement bas">
-                    <span class="date">2024</span>
+                    <span class="date">2022-2024</span>
                     <div class="contenu">
-                        <h3>Stage – G-STAR (Atlantis)</h3>
-                        <p>Vente, conseil client et mise en rayon.</p>
+                        <h3>Stages – UNDIZ & G-STAR (Atlantis)</h3>
+                        <p>12 semaines en vente, relation client, merchandising.</p>
+                    </div>
+                </div>
+                <div class="evenement bas">
+                    <span class="date">Juin - Août 2024</span>
+                    <div class="contenu">
+                        <h3>Téléopératrice B to B</h3>
+                        <p>Prise de rendez-vous, gestion des appels commerciaux.</p>
+                    </div>
+                </div>
+                <div class="evenement bas">
+                    <span class="date">Août 2024 - Février 2025</span>
+                    <div class="contenu">
+                        <h3>Agent de tri</h3>
+                        <p>Rigueur, travail d’équipe, respect des délais serrés.</p>
                     </div>
                 </div>
             </div>
@@ -118,18 +143,27 @@ Je cherche une entreprise où l’on valorise l’autonomie, la curiosité et l�
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            const evenements = [...document.querySelectorAll(".evenement")];
             const ligne = document.querySelector(".ligne");
+            const evenements = [...document.querySelectorAll(".evenement")];
+            const dates = evenements.map(ev => ev.querySelector(".date"));
+            const contenus = evenements.map(ev => ev.querySelector(".contenu"));
 
             setTimeout(() => {
                 ligne.style.opacity = "1";
 
-                evenements.forEach((ev, i) => {
+                dates.forEach((el, i) => {
                     setTimeout(() => {
-                        ev.style.opacity = "1";
-                    }, 500 + i * 400);
+                        el.style.opacity = "1";
+                    }, 800 + i * 400);
+                });
+
+                contenus.forEach((el, i) => {
+                    setTimeout(() => {
+                        el.style.opacity = "1";
+                    }, 800 + dates.length * 400 + i * 400);
                 });
             }, 500);
         });
     </script>
 </body>
+</html>
