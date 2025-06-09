@@ -27,10 +27,6 @@ body {
   color: white !important;
 }
 
-body {
-  background-color: white !important;
-  color: black !important;
-}
 
 /* === Frise chronologique === */
 .timeline-container {
