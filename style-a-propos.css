@@ -3,15 +3,16 @@
   width: 80%;
   margin: auto;
   padding: 0 50px;
+  background-color: white !important;
 }
 
 .a-propos-introduction {
-  background-color: white;
-  color: black;
+  background-color: white !important;
+  color: black !important;
 }
 
 .a-propos-introduction h1 {
-  color: #1f2039;
+  color: #1f2039 !important;
 }
 
 .a-propos-introduction p {
