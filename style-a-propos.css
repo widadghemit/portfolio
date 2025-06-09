@@ -72,11 +72,11 @@ body {
 }
 
 .timeline-items.top {
-  top: 80px;
+  top: 50px;
 }
 
 .timeline-items.bottom {
-  bottom: 80px;
+  bottom: 50px;
 }
 
 .timeline-item {
