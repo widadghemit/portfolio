@@ -17,6 +17,7 @@
 
 .a-propos-introduction p {
   text-align: justify;
+    color: black !important;
 }
 
 body {
