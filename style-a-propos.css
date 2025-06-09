@@ -67,16 +67,16 @@ body {
 .timeline-items {
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 
 .timeline-items.top {
-  top: 0;
+  top: 80px;
 }
 
 .timeline-items.bottom {
-  bottom: 0;
+  bottom: 80px;
 }
 
 .timeline-item {
