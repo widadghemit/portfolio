@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* pleine hauteur de l'écran */
+  min-height: auto; /* pleine hauteur de l'écran */
   padding: 40px;
   text-align: center;
 }
