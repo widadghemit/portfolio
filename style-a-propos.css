@@ -172,12 +172,19 @@ video {
   width: 75%;
 }
 
-.mes-passions ul li{
-  color: black;
+.mes-passions ul {
   width: 75%;
+  padding: 0;
+  margin: 0 auto;
+  list-style-position: inside;
+}
+
+.mes-passions ul li {
+  color: black;
   font-size: 1.1em;
   line-height: 1.6;
 }
+
 
 .mes-passions em {
   color: #a5b4fc; /* ou une autre couleur si tu veux */
