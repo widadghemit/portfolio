@@ -237,7 +237,7 @@ video {
 }
 
 .img-cathedrale img {
-  object-position: top center;
+  object-position: initial;
 }
 
 .img-calligraphie img {
