@@ -82,17 +82,16 @@
 
 .video-container {
   width: 100%;
-  max-width: 800px; /* ou autre valeur pour encadrer l'espace disponible */
-  margin: 0 auto;
+  padding: 0 20px; /* petit espace intérieur pour éviter que ça touche les bords */
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
 }
 
 .video-container video {
   width: 100%;
+  max-width: 1200px; /* ou 1000px selon ton design */
   height: auto;
-  transform: scale(1.7); /* Réduction globale : largeur ET hauteur */
-  transform-origin: center;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
