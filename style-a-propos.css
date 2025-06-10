@@ -66,13 +66,6 @@
   font-size: 1.6em
 }
 
-.mon-parcours > div {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
 /* --- Nouveaux styles pour rendre la vidéo responsive --- */
 .video-responsive {
     position: relative;
