@@ -13,10 +13,12 @@
 
 .texte-intro {
   flex: 1;
-  max-width: 600px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .texte-intro h1 {
