@@ -107,13 +107,7 @@ video {
 
 /* === Section Motivation === */
 .motivation {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,6 +116,7 @@ video {
   padding: 80px 20px;
   box-sizing: border-box;
 }
+
 
 .motivation h3 {
   color: white;
