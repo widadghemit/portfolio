@@ -172,7 +172,7 @@ video {
   width: 75%;
 }
 
-.mes-passions ul {
+.mes-passions ul li{
   color: black;
   width: 75%;
   font-size: 1.1em;
