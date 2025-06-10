@@ -93,4 +93,5 @@
   max-width: 1200px; /* ou 1000px selon ton design */
   height: auto;
   border-radius: 20px;
+  display: block;
 }
