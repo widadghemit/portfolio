@@ -25,12 +25,26 @@
   color: #a5b4fc;
   margin: 0 0 20px 0;
 }
-/* === Apparition douce des lettres === */
-.apparition-lettres {
+
+.titre-central {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 3.5em;
   color: #a5b4fc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: fadeInTitre 2s ease-in forwards;
 }
+
+/* Animation fondu */
+@keyframes fadeInTitre {
+  to {
+    opacity: 1;
+  }
+}
+
 
 .texte-intro p {
   font-size: 1.2em;
