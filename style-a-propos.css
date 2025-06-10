@@ -192,7 +192,7 @@ video {
   border-radius: 10px;
 }
 
-.galerie-passions a:hover {
+.accueil-photos img:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
