@@ -117,28 +117,32 @@ video {
 /* === Section Motivation === */
 .motivation {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
   background-color: #1f2039;
-  padding: 80px 20px;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
   box-sizing: border-box;
 }
 
-.motivation h3 {
-  color: white;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.6em;
-  font-family: 'Bebas Neue', sans-serif;
+.motivation-content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.motivation p {
-  width: 75%;
+.motivation-content h3 {
+  color: white;
+  text-align: justify; /* Justification des titres */
+  font-size: 1.6em;
+  font-family: inherit;
+  margin: 0;
+}
+
+.motivation-content p {
+  color: white;
   font-size: 1.2em;
   line-height: 1.6;
-  text-align: justify;
-  margin: 0 auto 40px auto;
-  color: white;
+  text-align: justify; /* Justification du texte */
+  margin: 0;
 }
