@@ -147,7 +147,7 @@ video {
   margin: 0;
 }
 
-/* === Section Mes passions === */
+/* === Section Mes passions (mise à jour style Index) === */
 .mes-passions {
   display: flex;
   flex-direction: column;
@@ -164,26 +164,40 @@ video {
   font-size: 1.6em;
 }
 
-.mes-passions > div {
+.mes-passions p {
+  color: black;
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+}
+
+.mes-passions ul {
+  max-width: 800px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.galerie-passions {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
 
-.mes-passions a {
+.galerie-passions a {
   display: inline-block;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10px;
 }
 
-.mes-passions a:hover {
-  transform: scale(5);
+.galerie-passions a:hover {
+  transform: scale(1.05);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-.mes-passions img {
-  width: 370px;
+.galerie-passions img {
+  width: 270px; /* réduit par rapport à 370px pour en placer 4 */
   height: auto;
   border-radius: 10px;
   object-fit: cover;
