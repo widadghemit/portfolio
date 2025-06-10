@@ -62,4 +62,9 @@
   font-size: 1.6em;
 }
 
+.mon-parcours > div { /* Tu peux supprimer ceci si tu n'as pas d'autres div directement dans .mon-parcours */
+  display: flex; /* Cela pourrait affecter le centrage de la vidéo si le div n'est pas le .video-responsive */
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 
