@@ -81,14 +81,18 @@
 }
 
 .video-container {
-  width: 80%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 800px; /* ou autre valeur pour encadrer l'espace disponible */
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .video-container video {
-  width: 80%;
+  width: 100%;
   height: auto;
+  transform: scale(0.8); /* Réduction globale : largeur ET hauteur */
+  transform-origin: center;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
