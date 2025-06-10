@@ -1,5 +1,5 @@
 /* === Accueil - Introduction === */
-.a-propos-introduction {
+.accueil-introduction {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,12 +13,10 @@
 
 .texte-intro {
   flex: 1;
-  width: 80%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  align-items: center;
 }
 
 .texte-intro h1 {
@@ -40,6 +38,10 @@
   margin-bottom: 40px;
 }
 
+.texte-intro .lien-violet {
+  color: #a5b4fc;
+  text-decoration: underline;
+}
 
 .cta {
   background-color: #a5b4fc;
@@ -72,7 +74,16 @@
   }
 }
 
+.accueil-introduction img {
+  max-width: 370px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 40px;
+  align-self: flex-start;
+}
 
+/* === Accueil - Section Photos === */
 .accueil-photos {
   display: flex;
   flex-direction: column;
