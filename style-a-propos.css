@@ -179,6 +179,12 @@ video {
   line-height: 1.6;
 }
 
+.mes-passions em {
+  color: #a5b4fc; /* ou une autre couleur si tu veux */
+  font-weight: bold;
+  font-style: normal; /* optionnel : pour désactiver l’italique par défaut du <em> */
+}
+
 .galerie-passions {
   display: flex;
   flex-wrap: wrap;
