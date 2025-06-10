@@ -121,9 +121,9 @@ video {
 
 
 .motivation p {
-  max-width: 800px;
-  margin: 0 auto;
   font-size: 1.2em;
   line-height: 1.6;
-  color: white;
+  margin: 0 auto 40px auto;
+  width: 100%;
+  text-align: center;
 }
