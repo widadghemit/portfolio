@@ -173,6 +173,7 @@ video {
 }
 
 .mes-passions ul {
+  color: black;
   max-width: 800px;
   font-size: 1.1em;
   line-height: 1.6;
