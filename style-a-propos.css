@@ -11,10 +11,22 @@
   padding: 60px 0;
 }
 
-.a-propos-introduction .carre-contenu {
-  margin: 0 auto;
-  padding: 0 20px; /* Garde de l'espace à gauche/droite si besoin */
-  max-width: 1200px; /* Pour éviter que le texte soit trop large sur grand écran */
+.carre-contenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  gap: 150px;
+}
+
+.carre-contenu p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  flex: 1;
+  max-width: 600px;
+  font-family: 'Manrope', sans-serif;
 }
 
 body {
@@ -35,6 +47,18 @@ body {
 .a-propos-introduction p {
   text-align: justify;
   color: white !important;
+}
+.timeline-section {
+  background-color: white;
+  padding: 80px 0;
+}
+
+.timeline-section h2 {
+  color: black;
+  text-align: center;
+  font-size: 1.6em;
+  margin-bottom: 80px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
