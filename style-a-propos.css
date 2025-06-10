@@ -9,12 +9,10 @@
   padding-bottom: 40px;
 }
 
-
 .texte-intro {
   max-width: 800px;
   margin: 0 auto;
 }
-
 
 .texte-intro h1 {
   font-family: 'Bebas Neue', sans-serif;
@@ -39,7 +37,6 @@
   }
 }
 
-
 .texte-intro p {
   font-size: 1.2em;
   line-height: 1.6;
@@ -48,35 +45,33 @@
   text-align: center;
 }
 
-
-/* === Accueil - Section Photos === */
+/* === Section "Mon parcours" - Styles de conteneur général === */
 .mon-parcours {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
+  flex-direction: column; /* Les éléments s'empilent verticalement */
+  align-items: center;   /* Centre les éléments horizontalement dans la colonne */
+  gap: 40px;             /* Espacement entre le H2 et la vidéo (peut être ajusté ou enlevé si tu veux gérer les marges manuellement) */
   background-color: white;
   padding: 80px;
 }
 
 .mon-parcours h2 {
-  color: black; 
+  color: black;
   text-align: center;
-  margin-bottom: 80px; 
-  font-size: 1.6em
+  margin-bottom: 80px; /* Rétablis à 80px comme tu le souhaites */
+  font-size: 1.6em;
 }
 
-/* --- Nouveaux styles pour rendre la vidéo responsive --- */
+/* --- Styles pour rendre la vidéo responsive --- */
 .video-responsive {
     position: relative;
-    /* Pour une vidéo 16:9 (rapport largeur/hauteur). Si ta vidéo est 4:3, utilise 75% */
-    padding-bottom: 56.25%; 
+    padding-bottom: 56.25%; /* Ratio 16:9. Adapte si ta vidéo est 4:3 (75%). */
     height: 0;
     overflow: hidden;
-    max-width: 100%; /* S'assure que le conteneur ne dépasse pas la largeur de son parent */
-    margin: 0 auto;  /* Centre le conteneur vidéo horizontalement */
-    border-radius: 10px; /* Ajoute un peu de style */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .video-responsive video {
@@ -87,6 +82,3 @@
     height: 100%;
     border: 0;
 }
-
-
-
