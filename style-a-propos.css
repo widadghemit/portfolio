@@ -1,23 +1,19 @@
 /* === Accueil - Introduction === */
 .a-propos-introduction {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 80%;
-  margin: auto;
-  flex-wrap: wrap;
-  min-height: 450px; /* Pour que ce soit bien centré */
-  gap: 150px; /* => espace entre l'image et le texte */
+  min-height: 100vh; /* pleine hauteur de l'écran */
   padding: 40px;
+  text-align: center;
 }
 
+
 .texte-intro {
-  flex: 1;
-  max-width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
+
 
 .texte-intro h1 {
   font-family: 'Bebas Neue', sans-serif;
@@ -30,12 +26,9 @@
   font-family: 'Bebas Neue', sans-serif;
   font-size: 3.5em;
   color: #a5b4fc;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   opacity: 0;
   animation: fadeInTitre 2s ease-in forwards;
+  text-align: center;
 }
 
 /* Animation fondu */
@@ -49,12 +42,11 @@
 .texte-intro p {
   font-size: 1.2em;
   line-height: 1.6;
-  margin-bottom: 40px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: justify;
+  margin: 0 auto 40px auto;
+  width: 100%;
+  text-align: center;
 }
+
 
 
 .texte-intro .lien-violet {
