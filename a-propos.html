@@ -31,7 +31,7 @@
     <main>
         <section class="a-propos-introduction">
             <div class="texte-intro">
-                <h1 id="texte-tape" class="apparition-lettres"></h1>
+               <h1 class="apparition-lettres">A propos</h1>
                 <p>
                     Je suis <em>Widad</em>, passionnée par le marketing digital et la communication mais également par la création de produits digitaux. Découvrez mon univers, mes projets et mes compétences à travers ce <a href="portfolio.html" class="lien-violet"><strong>portfolio</strong></a>.
                 </p>
@@ -67,21 +67,6 @@
         </div>
     </footer>
 
-    <script>
-        const texte = "Bienvenue";
-        const spanTexte = document.getElementById("texte-tape");
-        let index = 0;
-
-        function afficherLettreParLettre() {
-            if (index < texte.length) {
-                spanTexte.textContent += texte[index];
-                index++;
-                setTimeout(afficherLettreParLettre, 300);
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", afficherLettreParLettre);
-    </script>
 </body>
 
 </html>
