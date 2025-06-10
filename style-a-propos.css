@@ -14,7 +14,6 @@
   margin: 0 auto;
 }
 
-
 .texte-intro h1 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 3.5em;
@@ -38,7 +37,6 @@
   }
 }
 
-
 .texte-intro p {
   font-size: 1.2em;
   line-height: 1.6;
@@ -47,8 +45,7 @@
   text-align: center;
 }
 
-
-/* === Accueil - Section Photos === */
+/* === Section Mon Parcours === */
 .mon-parcours {
   display: flex;
   flex-direction: column;
@@ -59,9 +56,9 @@
 }
 
 .mon-parcours h2 {
-  color: black; 
+  color: black;
   text-align: center;
-  margin-bottom: 80px; 
+  margin-bottom: 80px;
   font-size: 1.6em;
 }
 
@@ -79,14 +76,4 @@
 }
 
 .mon-parcours a:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.mon-parcours img {
-  width: 370px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-  display: block;
-}
+  transform: scale(1.05
