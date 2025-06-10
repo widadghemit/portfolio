@@ -293,3 +293,25 @@ video {
 }
 
 
+.cta {
+  background-color: #a5b4fc;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.cta:hover {
+  background-color: #818cf8;
+}
+
+
+.cta-container {
+  text-align: center;
+  margin-top: 40px; /* ajustable selon l’espacement souhaité */
+}
