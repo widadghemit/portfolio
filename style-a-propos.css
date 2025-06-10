@@ -236,6 +236,23 @@ video {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
+.img-cathedrale img {
+  object-position: top center;
+}
+
+.img-calligraphie img {
+  object-position: top center;
+}
+
+.img-dessin img {
+  object-position: center right;
+}
+
+.img-codage img {
+  object-position: bottom center;
+}
+
+
 
 /* === Lightbox === */
 .lightbox {
