@@ -100,7 +100,7 @@
   font-size: 1.6em
 }
 
-.mon parcours > div {
+.mon-parcours > div {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
