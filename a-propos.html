@@ -1,117 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="utf-8" />
-    <title>À propos - Widad Ghemit</title>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Bebas+Neue&display=swap" rel="stylesheet" />
-    <link href="style-a-propos.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <title>A propos - Widad Ghemit</title>
+    <link href="style-index.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<header>
-    <nav>
-        <a href="index.html" class="logo">
-            <img src="Logo.png" alt="Logo Widad" />
-        </a>
-        <div class="nav-links">
-            <a href="index.html">Accueil</a>
-            <a href="a-propos.html" aria-current="page">À propos</a>
-            <a href="competences.html">Compétences</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="Logo.png" alt="Logo Widad">
+            </a>
+            <div>
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="competences.html">Compétences</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="a-propos-introduction">
+            <div class="texte-intro">
+                <h1 id="texte-tape" class="apparition-lettres"></h1>
+                <p>
+                    Je m'appelle <em>Widad</em>, et j’entamerai en septembre 2025 un Bachelor en Business & Marketing Digital à l’IDRAC Business School. À la recherche d'une alternance, je souhaite intégrer une entreprise dynamique où je pourrai contribuer concrètement à sa visibilité, tout en développant mes compétences stratégiques et créatives.
+
+Ce qui m’a attirée vers le marketing digital, c’est cette capacité à faire passer un message fort à travers des formats visuels, interactifs et analytiques. J’aime comprendre un besoin, y répondre avec créativité, puis en mesurer l’impact.
+
+Je me forme régulièrement avec Adobe, Excel, Hootsuite, WordPress et je m’initie à Google Analytics pour mieux comprendre les enjeux de visibilité, trafic et comportement utilisateur.
+
+Je cherche une entreprise valorisant autonomie, curiosité et initiative, avec des missions variées en communication, webmarketing, réseaux sociaux ou analyse de données.
+                </p>
+            </div>
+    
+        </section>
+
+        <section class="a-propos-parcours">
+            <h2>Mon parcours</h2>
+            <div>
+                <a href="element-1.png" target="_blank">
+                    <img src="element-1.png" alt="Twelve apostles - Australie">
+                </a>
+                <a href="element-2.png" target="_blank">
+                    <img src="element-2.png" alt="Wai-O-Tapu - Nouvelle-Zélande">
+                </a>
+                <a href="element-3.png" target="_blank">
+                    <img src="element-3.png" alt="Parc National d’Abel Tasman - Nouvelle-Zélande">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="Logo.png" alt="Logo Widad">
+        <div>
+            <a target="_blank" href="https://twitter.com/" class="lien-icone">
+                <img src="twitter.png" alt="Logo Twitter">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/" class="lien-icone">
+                <img src="instagram.png" alt="Logo Instagram">
+            </a>
         </div>
-    </nav>
-</header>
+    </footer>
 
-<main class="container">
-    <section class="intro">
-        <h1>À propos</h1>
-        <p>
-            Je m'appelle Widad et j’entamerai en septembre 2025 un Bachelor en Business & Marketing Digital à l’IDRAC Business School.
-            À la recherche d'une alternance, je souhaite intégrer une entreprise dynamique où je pourrai contribuer concrètement à sa visibilité,
-            tout en développant mes compétences stratégiques et créatives.
-        </p>
-        <p>
-            Ce qui m’a attirée vers le marketing digital, c’est cette capacité à faire passer un message fort à travers des formats visuels,
-            interactifs et analytiques. J’aime comprendre un besoin, y répondre avec créativité, puis en mesurer l’impact.
-        </p>
-        <p>
-            Je me forme régulièrement avec Adobe, Excel, Hootsuite, WordPress et je m’initie à Google Analytics pour mieux comprendre
-            les enjeux de visibilité, trafic et comportement utilisateur.
-        </p>
-        <p>
-            Je cherche une entreprise valorisant autonomie, curiosité et initiative, avec des missions variées en communication,
-            webmarketing, réseaux sociaux ou analyse de données.
-        </p>
-    </section>
+    <script>
+        const texte = "A propos";
+        const spanTexte = document.getElementById("texte-tape");
+        let index = 0;
 
-    <section class="timeline">
-        <h2>Mon parcours</h2>
-        <div class="timeline-line"></div>
+        function afficherLettreParLettre() {
+            if (index < texte.length) {
+                spanTexte.textContent += texte[index];
+                index++;
+                setTimeout(afficherLettreParLettre, 300);
+            }
+        }
 
-        <div class="timeline-items top">
-            <article class="timeline-item">
-                <time>2016–2019</time>
-                <p>Baccalauréat ES<br><em>Spécialité Mathématiques</em></p>
-            </article>
-            <article class="timeline-item">
-                <time>2019–2022</time>
-                <p>Licence de Droit<br><em>(niveau L2)</em></p>
-            </article>
-            <article class="timeline-item">
-                <time>2022–2024</time>
-                <p>BTS MCO</p>
-            </article>
-            <article class="timeline-item">
-                <time>Sept. 2025</time>
-                <p>Bachelor Business & Marketing<br><em>IDRAC</em></p>
-            </article>
-        </div>
-
-        <div class="timeline-items bottom">
-            <article class="timeline-item">
-                <time>2019–2021</time>
-                <p>Cours de mathématiques</p>
-            </article>
-            <article class="timeline-item">
-                <time>Sept.–Oct. 2021</time>
-                <p>Stage Cabinet d’avocat en Droit international privé</p>
-            </article>
-            <article class="timeline-item">
-                <time>2020–2022</time>
-                <p>Préparatrice de commandes<br><em>Super U Drive</em></p>
-            </article>
-            <article class="timeline-item">
-                <time>2022–2024</time>
-                <p>Stage Vente<br><em>Undiz & G-Star</em></p>
-            </article>
-            <article class="timeline-item">
-                <time>Juin–Août 2024</time>
-                <p>Téléopératrice BtoB</p>
-            </article>
-            <article class="timeline-item">
-                <time>Août 2024–Fév. 2025</time>
-                <p>Agent de tri</p>
-            </article>
-        </div>
-    </section>
-
-    <div class="cta-wrapper">
-        <a href="portfolio.html" class="cta">Voir mon portfolio</a>
-    </div>
-</main>
+        document.addEventListener("DOMContentLoaded", afficherLettreParLettre);
+    </script>
 </body>
 
-<footer>
-    <a href="index.html" class="logo">
-        <img src="Logo.png" alt="Logo Widad" />
-    </a>
-    <div class="social-links">
-        <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">
-            <img src="images/twitter.png" alt="Logo Twitter" />
-        </a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
-            <img src="images/instagram.png" alt="Logo Instagram" />
-        </a>
-    </div>
-</footer>
 </html>
