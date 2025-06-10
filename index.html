@@ -83,6 +83,39 @@
 
         document.addEventListener("DOMContentLoaded", afficherLettreParLettre);
     </script>
+
+<!-- Lightbox (à ajouter à la fin, avant </body>) -->
+<div id="lightbox-projets" class="lightbox">
+  <span class="close-lightbox">&times;</span>
+  <img class="lightbox-img" src="" alt="">
+</div>
+
+    <script>
+  // Lightbox pour les projets
+  const lightboxProjets = document.getElementById("lightbox-projets");
+  const lightboxImgProjets = document.querySelector("#lightbox-projets .lightbox-img");
+  const closeBtnProjets = document.querySelector("#lightbox-projets .close-lightbox");
+
+  document.querySelectorAll(".accueil-photos img").forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxProjets.style.display = "flex";
+      lightboxImgProjets.src = img.src;
+      lightboxImgProjets.alt = img.alt;
+    });
+  });
+
+  closeBtnProjets.addEventListener("click", () => {
+    lightboxProjets.style.display = "none";
+  });
+
+  lightboxProjets.addEventListener("click", e => {
+    if (e.target === lightboxProjets) {
+      lightboxProjets.style.display = "none";
+    }
+  });
+</script>
+
+    
 </body>
 
 </html>
