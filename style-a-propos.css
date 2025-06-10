@@ -48,38 +48,6 @@
   text-decoration: underline;
 }
 
-.cta {
-  background-color: #a5b4fc;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-  margin-top: 20px; /* ✅ Espacement ajouté ici */
-}
-
-.cta:hover {
-  background-color: #511f80;
-}
-
-/* Apparition retardée */
-.apparition-retardee {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInRetardee 1s ease-out forwards;
-  animation-delay: 2.7s; /* Doit être légèrement + long que la machine à écrire */
-}
-
-/* Animation d'apparition */
-@keyframes fadeInRetardee {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
 /* === Accueil - Section Photos === */
 .mon-parcours {
   display: flex;
