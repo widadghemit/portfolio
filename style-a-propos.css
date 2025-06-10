@@ -3,9 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: auto; /* pleine hauteur de l'écran */
   padding: 40px;
   text-align: center;
+  margin-top: 40px;
+  padding-bottom: 40px;
 }
 
 
