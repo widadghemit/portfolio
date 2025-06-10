@@ -1,236 +1,123 @@
-/* Reset & global */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background-color: #1f2039;
-  font-family: 'Manrope', sans-serif;
-  color: white;
-  overflow-x: hidden;
-}
-
-a {
-  color: #a5b4fc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Container */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 0 20px 60px;
-}
-
-/* Header & Nav */
-header nav {
+/* === Accueil - Introduction === */
+.a-propos-introduction {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #1f2039;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  min-height: 450px; /* Pour que ce soit bien centré */
+  gap: 150px; /* => espace entre l'image et le texte */
+  padding: 40px;
 }
 
-.logo img {
-  height: 50px;
-}
-
-.nav-links a {
-  margin-left: 20px;
-  font-weight: 600;
-  color: white;
-}
-
-.nav-links a[aria-current="page"] {
-  border-bottom: 2px solid #a5b4fc;
-}
-
-/* Intro Section */
-.intro {
-  padding: 60px 0;
-  text-align: justify;
-  font-size: 1.15em;
-  line-height: 1.6;
-}
-
-.intro h1 {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 3rem;
-  color: #a5b4fc;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-/* Timeline Section */
-.timeline {
-  background: white;
-  color: black;
-  padding: 80px 20px;
-  position: relative;
-  margin-top: 40px;
-  border-radius: 6px;
-}
-
-.timeline h2 {
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  font-size: 1.6rem;
-  margin-bottom: 60px;
-}
-
-/* Timeline line */
-.timeline-line {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  right: 5%;
-  height: 2px;
-  background: #1f2039;
-  transform: translateY(-50%);
-}
-
-/* Timeline Items Container */
-.timeline-items {
+.texte-intro {
+  flex: 1;
+  max-width: 600px;
   display: flex;
-  justify-content: space-between;
-  position: relative;
-  margin-top: 40px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texte-intro h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5em;
+  color: #a5b4fc;
+  margin: 0 0 20px 0;
+}
+/* === Apparition douce des lettres === */
+.apparition-lettres {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5em;
+  color: #a5b4fc;
+}
+
+.texte-intro p {
+  font-size: 1.2em;
+  line-height: 1.6;
   margin-bottom: 40px;
 }
 
-/* Position top or bottom items */
-.timeline-items.top {
-  margin-bottom: 100px;
-}
-
-.timeline-items.bottom {
-  margin-top: 100px;
-}
-
-/* Timeline Item */
-.timeline-item {
-  position: relative;
-  width: 120px;
-  text-align: center;
-  opacity: 0;
-  animation: fadeInItem 1s ease forwards;
-}
-
-.timeline-item time {
-  display: block;
-  font-weight: bold;
-  color: #a5b4fc;
-  margin-bottom: 8px;
-}
-
-.timeline-item p {
-  margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.3;
-  position: relative;
-  padding-left: 10px;
-}
-
-.timeline-item p::before {
-  content: "– ";
-  color: black;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-/* Connecting lines to timeline */
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 25px;
-  background: #1f2039;
-  z-index: 1;
-}
-
-.timeline-items.top .timeline-item::before {
-  top: 100%;
-}
-
-.timeline-items.bottom .timeline-item::before {
-  bottom: 100%;
-}
-
-/* Animation delays for stagger */
-.timeline-items.top .timeline-item:nth-child(1) { animation-delay: 0.5s; }
-.timeline-items.top .timeline-item:nth-child(2) { animation-delay: 0.9s; }
-.timeline-items.top .timeline-item:nth-child(3) { animation-delay: 1.3s; }
-.timeline-items.top .timeline-item:nth-child(4) { animation-delay: 1.7s; }
-
-.timeline-items.bottom .timeline-item:nth-child(1) { animation-delay: 2.1s; }
-.timeline-items.bottom .timeline-item:nth-child(2) { animation-delay: 2.5s; }
-.timeline-items.bottom .timeline-item:nth-child(3) { animation-delay: 2.9s; }
-.timeline-items.bottom .timeline-item:nth-child(4) { animation-delay: 3.3s; }
-.timeline-items.bottom .timeline-item:nth-child(5) { animation-delay: 3.7s; }
-.timeline-items.bottom .timeline-item:nth-child(6) { animation-delay: 4.1s; }
-
-/* CTA Button */
-.cta-wrapper {
-  text-align: center;
-  margin-top: 40px;
-}
 
 .cta {
   background-color: #a5b4fc;
-  color: #1f2039;
-  font-weight: 700;
-  padding: 14px 40px;
+  color: white;
+  padding: 12px 24px;
   border-radius: 25px;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  display: inline-block;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 20px; /* ✅ Espacement ajouté ici */
 }
 
 .cta:hover {
-  background-color: #7c86d6;
+  background-color: #511f80;
 }
 
-/* Footer */
-footer {
-  background-color: #1f2039;
-  color: white;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* Apparition retardée */
+.apparition-retardee {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRetardee 1s ease-out forwards;
+  animation-delay: 2.7s; /* Doit être légèrement + long que la machine à écrire */
 }
 
-footer .logo img {
-  height: 40px;
-}
-
-.social-links a {
-  margin-left: 20px;
-  display: inline-block;
-}
-
-.social-links img {
-  height: 24px;
-  filter: brightness(0) invert(1);
-}
-
-/* === Animations === */
-@keyframes fadeInItem {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
+/* Animation d'apparition */
+@keyframes fadeInRetardee {
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.accueil-introduction img {
+  max-width: 370px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 40px;
+  align-self: flex-start;
+}
+
+/* === Accueil - Section Photos === */
+.accueil-photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: white;
+  padding: 80px;
+}
+
+.accueil-photos h2 {
+  color: black; 
+  text-align: center;
+  margin-bottom: 80px; 
+  font-size: 1.6em
+}
+
+.accueil-photos > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.accueil-photos a {
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.accueil-photos a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.accueil-photos img {
+  width: 370px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
 }
