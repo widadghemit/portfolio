@@ -48,12 +48,6 @@
 }
 
 
-
-.texte-intro .lien-violet {
-  color: #a5b4fc;
-  text-decoration: underline;
-}
-
 /* === Accueil - Section Photos === */
 .mon-parcours {
   display: flex;
