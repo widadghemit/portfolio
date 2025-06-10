@@ -73,21 +73,27 @@
   justify-content: center;
 }
 
-.mon-parcours a {
-  display: inline-block;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 10px;
+/* --- Nouveaux styles pour rendre la vidéo responsive --- */
+.video-responsive {
+    position: relative;
+    /* Pour une vidéo 16:9 (rapport largeur/hauteur). Si ta vidéo est 4:3, utilise 75% */
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%; /* S'assure que le conteneur ne dépasse pas la largeur de son parent */
+    margin: 0 auto;  /* Centre le conteneur vidéo horizontalement */
+    border-radius: 10px; /* Ajoute un peu de style */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
 }
 
-.mon-parcours a:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+.video-responsive video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
-.mon-parcours img {
-  width: 370px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-  display: block;
-}
+
+
