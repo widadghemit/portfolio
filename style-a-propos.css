@@ -70,16 +70,7 @@
   }
 }
 
-.accueil-introduction img {
-  max-width: 370px;
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  margin-top: 40px;
-  align-self: flex-start;
-}
 
-/* === Accueil - Section Photos === */
 .accueil-photos {
   display: flex;
   flex-direction: column;
