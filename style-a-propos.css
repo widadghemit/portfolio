@@ -209,6 +209,7 @@ video {
   border-radius: 10px;
   object-fit: cover;
   display: block;
+  cursor: pointer;
 }
 
 /* === Lightbox === */
