@@ -102,23 +102,28 @@ video {
   display: block;
 }
 
-
+/* === Section Motivation === */
 .motivation {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: #1f2039;
+  padding: 80px;
 }
 
 .motivation h3 {
-  font-size: 1.8em;
-  color: #a5b4fc;
-  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.6em;
 }
+
 
 .motivation p {
   max-width: 800px;
   margin: 0 auto;
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.6;
-  color: #333;
+  color: white;
 }
