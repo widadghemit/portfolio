@@ -1,89 +1,185 @@
 /* === Accueil - Introduction === */
+
 .a-propos-introduction {
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
+
   padding: 40px;
+
   text-align: center;
+
   margin-top: 40px;
+
   padding-bottom: 40px;
+
 }
+
+
+
+
 
 .texte-intro {
+
   max-width: 800px;
+
   margin: 0 auto;
+
 }
+
+
+
+
 
 .texte-intro h1 {
+
   font-family: 'Bebas Neue', sans-serif;
+
   font-size: 3.5em;
+
   color: #a5b4fc;
+
   margin: 0 0 20px 0;
+
 }
+
+
 
 .titre-central {
+
   font-family: 'Bebas Neue', sans-serif;
+
   font-size: 3.5em;
+
   color: #a5b4fc;
+
   opacity: 0;
+
   animation: fadeInTitre 2s ease-in forwards;
+
   text-align: center;
+
 }
+
+
 
 /* Animation fondu */
+
 @keyframes fadeInTitre {
+
   to {
+
     opacity: 1;
+
   }
+
 }
+
+
+
+
 
 .texte-intro p {
+
   font-size: 1.2em;
+
   line-height: 1.6;
+
   margin: 0 auto 40px auto;
+
   width: 100%;
+
   text-align: center;
+
 }
+
+
+
+
 
 /* === Accueil - Section Photos === */
+
 .mon-parcours {
+
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
+
   gap: 40px;
+
   background-color: white;
+
   padding: 80px;
+
 }
+
+
 
 .mon-parcours h2 {
+
   color: black; 
+
   text-align: center;
+
   margin-bottom: 80px; 
+
   font-size: 1.6em
+
 }
+
+
 
 .mon-parcours > div {
+
   display: flex;
+
   flex-wrap: wrap;
+
   gap: 20px;
+
   justify-content: center;
+
 }
+
+
 
 .mon-parcours a {
+
   display: inline-block;
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
   border-radius: 10px;
+
 }
+
+
 
 .mon-parcours a:hover {
+
   transform: scale(1.05);
+
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
 }
 
+
+
 .mon-parcours img {
+
   width: 370px;
+
   height: auto;
+
   border-radius: 10px;
+
   object-fit: cover;
+
   display: block;
+
 }
