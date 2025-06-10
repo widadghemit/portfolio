@@ -316,3 +316,17 @@ video {
   text-align: center;
   margin-top: 40px; /* ajustable selon l’espacement souhaité */
 }
+
+.apparition-retardee {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRetardee 1s ease-out forwards;
+  animation-delay: 2.7s; /* ajuste si besoin */
+}
+
+@keyframes fadeInRetardee {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
