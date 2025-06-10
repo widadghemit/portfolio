@@ -58,7 +58,7 @@
 .mon-parcours h2 {
   color: black;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   font-size: 1.6em;
 }
 
@@ -92,5 +92,5 @@
   width: 100%;
   max-width: 1200px; /* ou 1000px selon ton design */
   height: auto;
-  border-radius: 10px;
+  border-radius: 50px;
 }
