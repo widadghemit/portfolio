@@ -125,6 +125,7 @@
   object-fit: cover;
   display: block;
   cursor: pointer;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 /* === Lightbox === */
