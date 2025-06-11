@@ -224,7 +224,6 @@ video {
   width: 270px;
   height: 270px;
   border-radius: 10px;
-  overflow: hidden;
   position: relative;
   flex-shrink: 0;
    transition: transform 0.4s ease, box-shadow 0.4s ease; 
