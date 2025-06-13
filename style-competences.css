@@ -79,8 +79,8 @@
   max-width: 25%;
   min-width: 280px;
   font-size: 1em;
-  color: #000; /* noir pur */
-  margin-top: 0; /* au cas où un style par défaut ajoute de l’espace */
+  color: black; /* noir pur */
+  margin-top: 15px; /* au cas où un style par défaut ajoute de l’espace */
 }
 
 .image-outils {
