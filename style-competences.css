@@ -1,4 +1,4 @@
-/* === Accueil - Introduction === */
+/* === Introduction === */
 .a-propos-introduction {
   display: flex;
   justify-content: center;
@@ -45,52 +45,44 @@
   text-align: center;
 }
 
+
+/* === outils === */
 .outils {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 20px; /* réduit l’espace entre les éléments */
   background-color: white;
   padding: 80px;
-  overflow-x: hidden; /* ← empêche le débordement horizontal */
+  overflow-x: hidden;
 }
 
 .outils h2 {
   color: black;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 40px; /* réduit l’espace sous le titre */
   font-size: 1.6em;
 }
 
 .contenu-outils {
   display: flex;
-  align-items: center;
+  justify-content: space-between; /* pousse l'image à droite */
+  align-items: flex-start;
   gap: 40px;
-  flex-wrap: wrap; /* ← permet d'éviter les débordements sur petits écrans */
-  width: 100%; /* ← s'assure que ça reste dans le conteneur */
+  flex-wrap: wrap;
+  width: 100%;
   box-sizing: border-box;
 }
 
 .texte-outils {
   flex: 1;
   max-width: 33%;
-  min-width: 280px; /* ← évite qu'il soit trop petit */
+  min-width: 280px;
   font-size: 1em;
-  color: #333;
+  color: #000; /* noir pur */
+  margin-top: 0; /* au cas où un style par défaut ajoute de l’espace */
 }
 
 .image-outils {
   flex: 2;
-  max-width: 66%;
-  min-width: 300px;
-  overflow: hidden;
-}
-
-.image-outils img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  max-width: 100%;
-}
-
+  max-
