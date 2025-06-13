@@ -53,6 +53,7 @@
   background-color: white;
   padding: 0;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .outils h2 {
@@ -82,7 +83,7 @@
 
 /* === Conteneur Vidéo === */
 .video-container {
-  width: 100%;
+  width: 100vw;
   padding: 0 0px; /* pour éviter que la vidéo colle aux bords de l'écran */
   box-sizing: border-box;
   display: flex;
@@ -93,10 +94,10 @@
 
 /* === Vidéo === */
 .video-container video {
-  width: 100%;
+  width: 100vw;
   max-width: 1200px; /* ajuste selon ton design */
   height: auto;
-  border-radius: 20px;
+  border-radius: 0;
   display: block;
   object-fit: cover; /* ou 'contain' selon ton rendu préféré */
   background-color: #ffffff; /* empêche les bandes noires */
