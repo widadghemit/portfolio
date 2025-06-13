@@ -45,7 +45,6 @@
   text-align: center;
 }
 
-/* === section outils === */
 .outils {
   display: flex;
   flex-direction: column;
@@ -53,6 +52,7 @@
   gap: 40px;
   background-color: white;
   padding: 80px;
+  overflow-x: hidden; /* ← empêche le débordement horizontal */
 }
 
 .outils h2 {
@@ -61,15 +61,20 @@
   margin-bottom: 80px;
   font-size: 1.6em;
 }
+
 .contenu-outils {
   display: flex;
   align-items: center;
   gap: 40px;
+  flex-wrap: wrap; /* ← permet d'éviter les débordements sur petits écrans */
+  width: 100%; /* ← s'assure que ça reste dans le conteneur */
+  box-sizing: border-box;
 }
 
 .texte-outils {
   flex: 1;
   max-width: 33%;
+  min-width: 280px; /* ← évite qu'il soit trop petit */
   font-size: 1em;
   color: #333;
 }
@@ -77,10 +82,15 @@
 .image-outils {
   flex: 2;
   max-width: 66%;
+  min-width: 300px;
+  overflow: hidden;
 }
 
 .image-outils img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: contain;
+  max-width: 100%;
 }
+
