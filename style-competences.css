@@ -64,7 +64,7 @@
 
 .image-outils {
   width: 100%;
-  padding: 0 8px;
+  margin-top: 10px; 
 }
 
 .image-outils img {
