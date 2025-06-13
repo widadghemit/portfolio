@@ -83,7 +83,7 @@
 /* === Conteneur Vidéo === */
 .video-container {
   width: 100%;
-  padding: 0 5px; /* pour éviter que la vidéo colle aux bords de l'écran */
+  padding: 0 0px; /* pour éviter que la vidéo colle aux bords de l'écran */
   box-sizing: border-box;
   display: flex;
   justify-content: center;
