@@ -96,7 +96,7 @@
 /* === Vidéo === */
 .video-container video {
   width: 100%;
-  max-width: 1200px; /* ajuste selon ton design */
+  max-width: 1300px; /* ajuste selon ton design */
   height: auto;
   border-radius: 0;
   display: block;
