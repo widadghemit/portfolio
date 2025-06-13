@@ -1,0 +1,331 @@
+/* === Accueil - Introduction === */
+.a-propos-introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.texte-intro {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.texte-intro h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5em;
+  color: #a5b4fc;
+  margin: 0 0 20px 0;
+}
+
+.titre-central {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5em;
+  color: #a5b4fc;
+  opacity: 0;
+  animation: fadeInTitre 2s ease-in forwards;
+  text-align: center;
+}
+
+/* Animation fondu */
+@keyframes fadeInTitre {
+  to {
+    opacity: 1;
+  }
+}
+
+.texte-intro p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 0 auto 40px auto;
+  width: 100%;
+  text-align: center;
+}
+
+/* === Section Mon Parcours === */
+.mon-parcours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: white;
+  padding: 80px;
+}
+
+.mon-parcours h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.6em;
+}
+
+.mon-parcours > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.mon-parcours a {
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.mon-parcours a:hover {
+  transform: scale(5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* === Conteneur Vidéo === */
+.video-container {
+  width: 100%;
+  padding: 0 10px; /* pour éviter que la vidéo colle aux bords de l'écran */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #ffffff; /* même couleur que ton fond de page */
+}
+
+/* === Vidéo === */
+.video-container video {
+  width: 100%;
+  max-width: 1200px; /* ajuste selon ton design */
+  height: auto;
+  border-radius: 20px;
+  display: block;
+  object-fit: cover; /* ou 'contain' selon ton rendu préféré */
+  background-color: #ffffff; /* empêche les bandes noires */
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* === Reset global pour la balise video (si utilisée ailleurs aussi) === */
+video {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: block;
+  background-color: #ffffff;
+}
+
+/* === Section Motivation === */
+.motivation {
+  width: 100%;
+  background-color: #1f2039;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.motivation-content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.motivation-content h3 {
+  color: white;
+  text-align: justify; /* Justification des titres */
+  font-size: 1.6em;
+  font-family: inherit;
+  margin: 0;
+}
+
+.motivation-content p {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: justify; /* Justification du texte */
+  margin: 0;
+}
+
+/* === Section Mes passions (mise à jour style Index) === */
+.mes-passions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: white;
+  padding: 80px;
+}
+
+.mes-passions h4 {
+  color: black;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.6em;
+}
+
+.mes-passions p {
+  color: black;
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: center;
+  width: 75%;
+}
+
+.mes-passions ul {
+  width: 75%;
+  padding: 0;
+  margin: 0 auto;
+  list-style-position: inside;
+}
+
+.mes-passions ul li {
+  color: black;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+
+.mes-passions em {
+  color: #a5b4fc; /* ou une autre couleur si tu veux */
+  font-weight: bold;
+  font-style: normal; /* optionnel : pour désactiver l’italique par défaut du <em> */
+}
+
+.galerie-passions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.galerie-passions a {
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.galerie-passions img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.galerie-passions img {
+  width: 270px; /* réduit par rapport à 370px pour en placer 4 */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.carre-img {
+  width: 270px;
+  height: 270px;
+  border-radius: 10px;
+  position: relative;
+  flex-shrink: 0;
+   transition: transform 0.4s ease, box-shadow 0.4s ease; 
+}
+
+.carre-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.carre-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-cathedrale img {
+  object-position: initial;
+}
+
+.img-calligraphie img {
+  object-position: bottom center;
+}
+
+.img-dessin img {
+  object-position: center right;
+}
+
+.img-codage img {
+  object-position: bottom center;
+}
+
+
+
+/* === Lightbox === */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.cta {
+  background-color: #a5b4fc;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.cta:hover {
+  background-color: #818cf8;
+}
+
+
+.cta-container {
+  text-align: center;
+  margin-top: 40px; /* ajustable selon l’espacement souhaité */
+}
+
+.apparition-retardee {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRetardee 1s ease-out forwards;
+  animation-delay: 2.7s; /* ajuste si besoin */
+}
+
+@keyframes fadeInRetardee {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
