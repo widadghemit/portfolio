@@ -73,3 +73,37 @@
   display: block;
   object-fit: cover; /* ou 'contain' selon ton besoin */
 }
+
+
+/* === Section Motivation === */
+.certifications {
+  width: 100%;
+  background-color: #1f2039;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.certifications-content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.certifications-content h3 {
+  color: white;
+  text-align: justify; /* Justification des titres */
+  font-size: 1.6em;
+  font-family: inherit;
+  margin: 0;
+}
+
+.certifications-content p {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: justify; /* Justification du texte */
+  margin: 0;
+}
