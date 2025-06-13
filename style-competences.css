@@ -76,7 +76,7 @@
 
 .texte-outils {
   flex: 1;
-  max-width: 33%;
+  max-width: 25%;
   min-width: 280px;
   font-size: 1em;
   color: #000; /* noir pur */
@@ -84,5 +84,18 @@
 }
 
 .image-outils {
-  flex: 2;
-  max-
+  flex: 3;
+  max-width: 75%;
+  min-width: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end; /* colle l’image à droite */
+}
+
+.image-outils img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  max-width: 100%;
+}
