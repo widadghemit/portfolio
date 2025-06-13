@@ -84,7 +84,7 @@
 /* === Conteneur Vidéo === */
 .video-container {
   width: 100%;
-  padding: 0 0px; /* pour éviter que la vidéo colle aux bords de l'écran */
+  padding: 0 10px; /* pour éviter que la vidéo colle aux bords de l'écran */
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -97,7 +97,7 @@
   width: 100%;
   max-width: 1200px; /* ajuste selon ton design */
   height: auto;
-  border-radius: 0;
+  border-radius: 20;
   display: block;
   object-fit: cover; /* ou 'contain' selon ton rendu préféré */
   background-color: #ffffff; /* empêche les bandes noires */
