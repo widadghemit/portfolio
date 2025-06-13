@@ -147,6 +147,7 @@ video {
   line-height: 1.6;
   text-align: justify; /* Justification du texte */
   margin: 0;
+  padding-left: 20px;
 }
 
 .certifications-list {
@@ -158,3 +159,6 @@ video {
   margin: 0;
 }
 
+.certifications-list li {
+  margin-bottom: 15px; /* espace entre chaque certification */
+}
