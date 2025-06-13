@@ -94,7 +94,7 @@
 
 .certifications-content h3 {
   color: white;
-  text-align: justify; /* Justification des titres */
+  text-align: center; /* Justification des titres */
   font-size: 1.6em;
   font-family: inherit;
   margin: 0;
