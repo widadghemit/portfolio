@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Widad</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body class="page-contact">
+
+  <header>
+    <nav aria-label="Menu principal">
+      <a href="index.html">
+        <img src="Logo.png" alt="Logo Widad" />
+      </a>
+      <div>
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="contact-section">
+    <div class="contact-card">
+      <h1>Envie de collaborer ?</h1>
+      <p class="intro-contact">
+        Je serais ravie d’échanger avec vous ! Que ce soit pour une alternance, une collaboration, une opportunité professionnelle ou simplement pour discuter, n’hésitez pas à m’écrire.
+      </p>
+
+      <div class="contact-infos">
+        <p>📞 <a href="tel:+33651126440">06 51 12 64 40</a></p>
+        <p>📧 <a href="mailto:ghemit.widad@gmail.com">ghemit.widad@gmail.com</a></p>
+        <p>🔗 <a href="www.linkedin.com/in/widad-ghemit" target="_blank" rel="noopener noreferrer">Mon profil LinkedIn</a></p>
+      </div>
+
+      <form class="form-contact" onsubmit="showConfirmation(event)" aria-label="Formulaire de contact">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="cta">Envoyer</button>
+        <div id="status" role="alert" aria-live="polite"></div>
+      </form>
+    </div>
+
+    <div class="flying-envelope" aria-hidden="true">✉️</div>
+  </main>
+
+  <footer>
+    <img src="Logo.png" alt="Logo Widad" />
+    <div>
+      <a href="https://twitter.com/" target="_blank" class="lien-icone" aria-label="Twitter" rel="noopener noreferrer">
+        <img src="twitter.png" alt="Logo Twitter" />
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" class="lien-icone" aria-label="Instagram" rel="noopener noreferrer">
+        <img src="instagram.png" alt="Logo Instagram" />
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    function showConfirmation(event) {
+      event.preventDefault();
+      const envelope = document.querySelector(".flying-envelope");
+      const status = document.getElementById("status");
+      envelope.classList.add("animate");
+      setTimeout(() => {
+        envelope.classList.remove("animate");
+        status.classList.add("visible");
+        status.innerText = "Votre message a bien été envoyé !";
+        event.target.reset();
+      }, 1500);
+    }
+  </script>
+</body>
+</html>
