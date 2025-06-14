@@ -130,7 +130,7 @@
 
 .texte-projets {
   flex: 0 1 auto;         
-  max-width: 750px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
