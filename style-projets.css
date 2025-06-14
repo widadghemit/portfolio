@@ -1,7 +1,7 @@
 /* === Accueil - Introduction === */
 .projets-introduction {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding: 40px;
   text-align: center;
