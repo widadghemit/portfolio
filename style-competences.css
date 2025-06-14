@@ -180,17 +180,17 @@ video {
 }
 
 
-.cert-btn {
-  background-color: #4CAF50;
+.cta {
+  background-color: #a5b4fc;
   color: white;
-  padding: 6px 10px;
+  padding: 12px 24px;
+  border-radius: 0 25px 0 25px;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 0.9em;
-  transition: background-color 0.3s ease;
+  font-weight: bold;
+  transition: background-color 0.3s;
   white-space: nowrap;
 }
 
-.cert-btn:hover {
-  background-color: #45a049;
+.cta:hover {
+  background-color: #511f80;
 }
