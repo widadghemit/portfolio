@@ -147,6 +147,7 @@ video {
   padding-left: 20px;
   margin: 0;
   color: white;
+  margin-bottom: 10px;
 }
 
 .certifications-list li {
@@ -157,7 +158,7 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   flex-wrap: wrap;
 }
 
