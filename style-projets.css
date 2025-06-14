@@ -1,7 +1,7 @@
 /* === Accueil - Introduction === */
 .projets-introduction {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 40px;
   text-align: center;
@@ -30,7 +30,6 @@
   text-align: center;
 }
 
-/* Animation fondu */
 @keyframes fadeInTitre {
   to {
     opacity: 1;
@@ -45,19 +44,56 @@
   text-align: center;
 }
 
-/* === Section Mon Parcours === */
+/* === Sommaire === */
+.sommaire-projets {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: left;
+  font-size: 1em;
+}
+
+.sommaire-projets h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2em;
+  color: #a5b4fc;
+  margin-bottom: 15px;
+}
+
+.sommaire-projets ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sommaire-projets li {
+  margin-bottom: 8px;
+}
+
+.sommaire-projets li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sommaire-projets li a:hover {
+  color: #a5b4fc;
+}
+
+.sommaire-projets ul ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+/* === Section suivante === */
 .creations-graphiques {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  background-color: white;
-  padding: 80px;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .creations-graphiques h2 {
-  color: black;
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 1.6em;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5em;
+  color: #333;
 }
