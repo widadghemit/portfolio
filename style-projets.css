@@ -123,7 +123,7 @@
   margin: auto;
   flex-wrap: wrap;
   min-height: 450px; /* Pour que ce soit bien centré */
-  gap: 150px; /* => espace entre l'image et le texte */
+  gap: 200px; /* => espace entre l'image et le texte */
   padding: 40px;
 }
 
@@ -137,7 +137,7 @@
 
 .texte-projets h3 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 3.5em;
+  font-size: 2em;
   color: #a5b4fc;
   margin: 0 0 20px 0;
 }
@@ -146,6 +146,7 @@
   font-size: 1.2em;
   line-height: 1.6;
   margin-bottom: 40px;
+  color: black;
 }
 
 .design-graphique img {
