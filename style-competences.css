@@ -304,3 +304,74 @@ video {
 .img-codage img {
   object-position: bottom center;
 }
+
+
+
+/* === Lightbox === */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.cta {
+  background-color: #a5b4fc;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.cta:hover {
+  background-color: #818cf8;
+}
+
+
+.cta-container {
+  text-align: center;
+  margin-top: 40px; /* ajustable selon l’espacement souhaité */
+}
+
+.apparition-retardee {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInRetardee 1s ease-out forwards;
+  animation-delay: 2.7s; /* ajuste si besoin */
+}
+
+@keyframes fadeInRetardee {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
