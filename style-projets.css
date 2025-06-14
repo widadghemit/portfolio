@@ -99,7 +99,7 @@
 }
 
 
-.creation-graphique {
+.creations-graphiques {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,7 +108,7 @@
   width: 100%;
 }
 
-.creation-graphique h2 {
+.creations-graphiques h2 {
   color: black;
   text-align: center;
   margin: 40px 0;
