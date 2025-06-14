@@ -82,8 +82,10 @@
        Ce visuel a été réalisé dans le cadre d’un exercice de création publicitaire sur Photoshop. L’objectif était de concevoir une image dynamique et rafraîchissante pour une boisson estivale fictive de Starbucks, à base de kiwi et de matcha.
       </p>
     </div>
-    <img src="Starbucks.png" alt="Photoshop">
-  </div> <!-- fermeture de .design-graphique -->
+   <a href="Starbucks.png" class="lightbox-trigger">
+      <img src="Starbucks.png" alt="Photoshop">
+    </a>
+  </div>
 </section>
 
 
@@ -103,36 +105,34 @@
     </footer>
 
 
-<!-- Fenêtre lightbox cachée par défaut -->
-<div id="lightbox" class="lightbox">
-  <span class="close-lightbox">&times;</span>
-  <img class="lightbox-img" src="" alt="">
+<div class="lightbox" id="lightbox">
+  <span class="close-lightbox" id="close-lightbox">&times;</span>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Image agrandie">
 </div>
     
 <script>
-  // Récupération des éléments
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.querySelector(".lightbox-img");
-  const closeBtn = document.querySelector(".close-lightbox");
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.getElementById('close-lightbox');
 
-  // Quand on clique sur une image de la galerie
-  document.querySelectorAll(".carre-img img").forEach(img => {
-    img.addEventListener("click", () => {
-      lightbox.style.display = "flex";
-      lightboxImg.src = img.src;
-      lightboxImg.alt = img.alt;
+  document.querySelectorAll('.lightbox-trigger').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const imgSrc = link.getAttribute('href');
+      lightboxImg.src = imgSrc;
+      lightbox.style.display = 'flex';
     });
   });
 
-  // Fermer la lightbox quand on clique sur la croix
-  closeBtn.addEventListener("click", () => {
-    lightbox.style.display = "none";
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+    lightboxImg.src = '';
   });
 
-  // Fermer aussi quand on clique en dehors de l'image
-  lightbox.addEventListener("click", e => {
+  lightbox.addEventListener('click', e => {
     if (e.target === lightbox) {
-      lightbox.style.display = "none";
+      lightbox.style.display = 'none';
+      lightboxImg.src = '';
     }
   });
 </script>
