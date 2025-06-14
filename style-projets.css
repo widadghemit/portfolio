@@ -116,6 +116,42 @@
 }
 
 
+.bloc-projet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* Pour que ça reste responsive */
+}
+
+.texte-gauche {
+  flex: 1;
+  min-width: 250px;
+}
+
+.texte-gauche h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.texte-gauche p {
+  line-height: 1.6;
+}
+
+.image-droite {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.image-droite img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
 
 
 
