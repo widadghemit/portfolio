@@ -193,8 +193,8 @@ video {
 }
 
 
-/* === Section Mes passions (mise à jour style Index) === */
-.mes-passions {
+/* === Section Soft Skills (mise à jour style Index) === */
+.soft-skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,14 +203,14 @@ video {
   padding: 80px;
 }
 
-.mes-passions h4 {
+.soft-skills h4 {
   color: black;
   text-align: center;
   margin-bottom: 40px;
   font-size: 1.6em;
 }
 
-.mes-passions p {
+.soft-skills p {
   color: black;
   font-size: 1.1em;
   line-height: 1.6;
@@ -218,21 +218,21 @@ video {
   width: 75%;
 }
 
-.mes-passions ul {
+.soft-skills ul {
   width: 75%;
   padding: 0;
   margin: 0 auto;
   list-style-position: inside;
 }
 
-.mes-passions ul li {
+.soft-skills ul li {
   color: black;
   font-size: 1.1em;
   line-height: 1.6;
 }
 
 
-.mes-passions em {
+.soft-skills em {
   color: #a5b4fc; /* ou une autre couleur si tu veux */
   font-weight: bold;
   font-style: normal; /* optionnel : pour désactiver l’italique par défaut du <em> */
