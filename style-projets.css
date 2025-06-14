@@ -114,6 +114,32 @@
   font-size: 1.6em
 }
 
+  .design-graphique {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  min-height: 450px; /* Pour que ce soit bien centré */
+  gap: 150px; /* => espace entre l'image et le texte */
+  padding: 40px;
+}
+
+.texte-projets {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texte-projets h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5em;
+  color: #a5b4fc;
+  margin: 0 0 20px 0;
+}
 
 
 
