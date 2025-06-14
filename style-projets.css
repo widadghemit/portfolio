@@ -106,6 +106,8 @@
   gap: 40px;
   background-color: white;
   padding: 80px;
+  max-width: 1200px; /* Ajout utile */
+  margin: 0 auto;     /* Pour centrer */
 }
 
 .creations-graphiques h2 {
@@ -166,6 +168,11 @@
   height: auto;
   border-radius: 8px;
 }
+
+@media (min-width: 768px) {
+  .bloc-projet {
+    flex-wrap: nowrap;
+  }
 
 .carre-img {
   width: 280px;
