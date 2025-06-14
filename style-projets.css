@@ -5,13 +5,13 @@
   align-items: center;
   padding: 40px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
   padding-bottom: 40px;
     gap: 60px;
 }
 
 .texte-intro {
-  width: 70%;
+  width: 66%;
   padding-left: 40px;
   padding-right: 40px;
   border-right: 1px solid #ccc;
@@ -49,8 +49,8 @@
 
 /* === Sommaire === */
 .sommaire-projets {
-  width: 30%;
-  padding-left: 40px;
+  width: 34%;
+  padding-left: 20px;
   padding-right: 40px;
   font-size: 0.85em;
    text-align: left;
