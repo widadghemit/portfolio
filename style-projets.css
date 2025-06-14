@@ -128,7 +128,7 @@
 }
 
 .texte-projets {
-  flex: 1;
+  flex: 0 1 auto;         
   max-width: 1000px;
   display: flex;
   flex-direction: column;
