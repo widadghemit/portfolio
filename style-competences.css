@@ -162,3 +162,28 @@ video {
 .certifications-list li {
   margin-bottom: 15px; /* espace entre chaque certification */
 }
+
+.cert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.cert-text {
+  flex: 1;
+}
+
+.cert-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.cert-btn:hover {
+  background-color: #45a049;
+}
