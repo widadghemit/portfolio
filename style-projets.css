@@ -86,6 +86,17 @@
   margin-top: 5px;
 }
 
+/* Sections principales en gras */
+.sommaire-projets > ul > li > a {
+  font-weight: bold;
+}
+
+/* Sous-sections légèrement décalées */
+.sommaire-projets ul ul li {
+  padding-left: 10px;
+}
+
+
 /* === Section suivante === */
 .creations-graphiques {
   max-width: 1000px;
