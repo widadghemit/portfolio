@@ -57,14 +57,14 @@
 .sommaire-projets h2 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2em;
-  color: #a5b4fc;
+  color: white;
   margin-bottom: 20px;
 }
 
 .sommaire-projets ul {
   list-style-type: none;
   padding-left: 0;
-}
+  }
 
 .sommaire-projets li {
   margin-bottom: 10px;
@@ -93,6 +93,7 @@
 /* Sous-sections légèrement décalées */
 .sommaire-projets ul ul li {
   padding-left: 10px;
+  font-size: 0.95em;
 }
 
 
