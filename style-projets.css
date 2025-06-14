@@ -134,7 +134,7 @@
 .texte-gauche h3 {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
-  color: black;
+  color: #a5b4fc;
 }
 
 .texte-gauche p,
@@ -147,10 +147,14 @@
   list-style-type: disc;
   padding-left: 1.5rem;
   margin: 1rem 0;
+}
 
 .image-droite {
-  flex: 0 0 35%;
-  text-align: center;
+  flex: 0 0 40%;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
 }
 
 .image-droite img {
@@ -160,8 +164,8 @@
 }
 
 .carre-img {
-  width: 270px;
-  height: 270px;
+  width: 300px;
+  height: 300px;
   border-radius: 10px;
   position: relative;
   flex-shrink: 0;
