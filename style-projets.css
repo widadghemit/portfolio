@@ -9,8 +9,6 @@
   padding-bottom: 40px;
 }
 
-
-
 .texte-intro {
   max-width: 800px;
   margin: 0 auto;
@@ -50,7 +48,6 @@
 .sommaire-projets {
   max-width: 800px;
   margin: 0 auto;
-  margin-top: 40px;
   text-align: left;
   font-size: 1em;
 }
@@ -59,16 +56,16 @@
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2em;
   color: #a5b4fc;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .sommaire-projets ul {
   list-style-type: none;
-  padding: 0;
+  padding-left: 0;
 }
 
 .sommaire-projets li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .sommaire-projets li a {
@@ -86,7 +83,7 @@
   margin-top: 5px;
 }
 
-/* Sections principales en gras */
+
 .sommaire-projets > ul > li > a {
   font-weight: bold;
 }
