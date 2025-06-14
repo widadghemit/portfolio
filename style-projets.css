@@ -151,7 +151,32 @@
   border-radius: 8px;
 }
 
+.carre-img {
+  width: 270px;
+  height: 270px;
+  border-radius: 10px;
+  position: relative;
+  flex-shrink: 0;
+   transition: transform 0.4s ease, box-shadow 0.4s ease; 
+}
 
+.carre-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.carre-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-starbucks img {
+  object-position: initial;
+}
 
 
 
