@@ -106,17 +106,16 @@
   gap: 40px;
   background-color: white;
   padding: 80px;
-  max-width: 1200px; /* Ajout utile */
-  margin: 0 auto;     /* Pour centrer */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .creations-graphiques h2 {
-  color: black; 
+  color: black;
   text-align: center;
-  margin-bottom: 80px; 
-  font-size: 1.6em
+  margin-bottom: 80px;
+  font-size: 1.6em;
 }
-
 
 .bloc-projet {
   display: flex;
@@ -127,12 +126,10 @@
   width: 100%;
 }
 
-
 .texte-gauche {
   flex: 0 0 60%;
   color: black;
 }
-
 
 .texte-gauche h3 {
   margin-bottom: 0.5rem;
@@ -174,36 +171,33 @@
     flex-wrap: nowrap;
   }
 
-.carre-img {
-  width: 280px;
-  height: 280px;
-  border-radius: 10px;
-  position: relative;
-  flex-shrink: 0;
-   transition: transform 0.4s ease, box-shadow 0.4s ease; 
+  .carre-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    position: relative;
+    flex-shrink: 0;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .carre-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .carre-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .img-starbucks img {
+    object-position: initial;
+  }
 }
-
-.carre-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  cursor: pointer;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.carre-img img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.img-starbucks img {
-  object-position: initial;
-}
-
-
-
-
 
 /* === Lightbox === */
 .lightbox {
@@ -236,6 +230,60 @@
   font-weight: bold;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* === Projet Photoshop : Starbucks === */
+.section-graphique {
+  background-color: white;
+  padding: 80px 40px;
+}
+
+.contenu-graphique {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.texte-graphique {
+  flex: 1;
+  min-width: 300px;
+  color: black;
+}
+
+.texte-graphique h2 {
+  color: #a5b4fc;
+  margin-bottom: 20px;
+}
+
+.texte-graphique ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.img-graphique {
+  flex-shrink: 0;
+}
+
+.img-carree {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-carree:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
 
 
 
