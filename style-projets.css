@@ -1,13 +1,12 @@
 /* === Accueil - Introduction === */
 .projets-introduction {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   padding: 40px;
-  text-align: left;
+  text-align: center;
   margin-top: 40px;
   padding-bottom: 40px;
-  gap: 40px; /* espace entre les deux colonnes */
 }
 
 
@@ -98,7 +97,6 @@
 }
 
 
-/* === Section suivante === */
 .creations-graphiques {
   max-width: 1000px;
   margin: 60px auto;
