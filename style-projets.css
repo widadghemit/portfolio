@@ -278,6 +278,10 @@
   margin-bottom: 20px;
 }
 
+.emailing img {
+  object-position: center;
+}
+
 
 
 html {
