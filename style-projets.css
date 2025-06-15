@@ -300,6 +300,22 @@
 }
 
 
+.bureautique {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 0;
+  width: 100%;
+}
+
+.bureautique h2 {
+  color: black;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 1.6em;
+}
 
 html {
   scroll-behavior: smooth;
