@@ -229,6 +229,7 @@
   flex-direction: row;          /* images côte à côte */
   justify-content: center;      /* centrage horizontal */
   gap: 40px;
+  display: flex;
 }
 
 .design-graphique.illustrator .images-stack img {
