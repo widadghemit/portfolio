@@ -259,6 +259,27 @@
 }
 
 
+
+
+.emailing {
+  background-color: #a5b4fc;
+  padding: 60px 40px;
+  width: 100%;
+}
+
+.emailing .texte-projets p {
+  color: white;
+}
+
+.emailing h2 {
+  color: white;
+  text-align: center;
+  font-size: 1.6em;
+  margin-bottom: 40px;
+}
+
+
+
 html {
   scroll-behavior: smooth;
 }
