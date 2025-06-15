@@ -312,8 +312,8 @@
 .bureautique h2 {
   color: black;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin-top: 40px;        /* espace au-dessus du titre */
+  margin-bottom: 10px;     /* espace entre le titre et le contenu qui suit */
   font-size: 1.6em;
 }
 
