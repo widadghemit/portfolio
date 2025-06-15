@@ -282,6 +282,8 @@
 .emailing .images-stack img {
   object-fit: cover;
   object-position: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .emailing .design-graphique {
