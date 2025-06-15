@@ -208,28 +208,35 @@
   transform: scale(1.2);
 }
 
-.images-stack {
-  display: flex;
+.design-graphique.illustrator {
   flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
+  align-items: center;
+  gap: 30px; /* espace entre texte et images */
+  padding: 60px 40px;
 }
 
-.images-stack img {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s, box-shadow 0.3s;
-  object-position: left center; 
+.design-graphique.illustrator .texte-projets {
+  max-width: none;       /* permet d’avoir du texte plus large */
+  width: 100%;
+  text-align: center;
+}
+
+.design-graphique.illustrator .texte-projets p {
+  text-align: center;    /* centrer le texte */
+}
+
+.design-graphique.illustrator .images-stack {
+  flex-direction: row;          /* images côte à côte */
+  justify-content: center;      /* centrage horizontal */
+  gap: 20px;
+}
+
+.design-graphique.illustrator .images-stack img {
   width: 285px;
   height: 285px;
   object-fit: cover;
-  border-radius: 20px;
+  object-position: left center;
 }
-
-.images-stack img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
-}
-
 
 
 
