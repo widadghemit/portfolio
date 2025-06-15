@@ -208,6 +208,21 @@
   transform: scale(1.2);
 }
 
+.images-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.images-container img {
+  max-width: 170px; /* Plus petit que l'image unique */
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
 
 
 
