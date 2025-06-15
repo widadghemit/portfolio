@@ -275,12 +275,18 @@
   color: white;
   text-align: center;
   font-size: 1.6em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.emailing img {
+.emailing .images-stack img {
+  object-fit: cover;
   object-position: center;
 }
+
+.emailing .design-graphique {
+  gap: 40px;
+}
+
 
 
 
