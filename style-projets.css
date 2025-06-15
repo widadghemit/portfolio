@@ -288,6 +288,14 @@
   gap: 40px;
 }
 
+.emailing .email-link {
+  display: block;           /* permet de centrer le lien */
+  text-align: center;       /* centre le texte */
+  color: white;             /* texte blanc */
+  text-decoration: underline; /* souligne le lien */
+  font-weight: 500;         /* facultatif : un peu plus lisible */
+  margin-top: 10px;         /* espace au-dessus */
+}
 
 
 
