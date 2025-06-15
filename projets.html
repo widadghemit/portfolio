@@ -123,7 +123,26 @@ Ensuite, j’ai utilisé <em>InDesign</em> pour organiser le texte et faire la m
       <img src="Canva.png" alt="Canva">
     </a>
   </div>
-    
+
+
+    <div class="design-graphique">
+  <div class="texte-projets">
+    <h3 id="capcut">Capcut & Adobe Express</h3>
+    <p>
+      Cette courte vidéo met en avant une animation dynamique réalisée dans le cadre d’un projet créatif. Elle met l’accent sur le rythme, la fluidité et la mise en scène pour capter l’attention et valoriser un message visuel.
+    </p>
+  </div>
+
+  <a href="video-courte.mp4" class="lightbox-trigger-video">
+    <img src="miniature-video.jpg" alt="Vidéo" />
+  </a>
+</div>
+
+<div class="lightbox" id="lightbox-video">
+  <span class="close-lightbox" id="close-lightbox-video">&times;</span>
+  <video class="lightbox-video" id="lightbox-video-content" controls></video>
+</div>
+
         
     </main>
 
@@ -168,6 +187,35 @@ Ensuite, j’ai utilisé <em>InDesign</em> pour organiser le texte et faire la m
     if (e.target === lightbox) {
       lightbox.style.display = 'none';
       lightboxImg.src = '';
+    }
+  });
+</script>
+
+    <script>
+  const lightboxVideo = document.getElementById('lightbox-video');
+  const lightboxVideoContent = document.getElementById('lightbox-video-content');
+  const closeVideoBtn = document.getElementById('close-lightbox-video');
+
+  document.querySelectorAll('.lightbox-trigger-video').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const videoSrc = link.getAttribute('href');
+      lightboxVideoContent.src = videoSrc;
+      lightboxVideo.style.display = 'flex';
+    });
+  });
+
+  closeVideoBtn.addEventListener('click', () => {
+    lightboxVideo.style.display = 'none';
+    lightboxVideoContent.pause();
+    lightboxVideoContent.src = '';
+  });
+
+  lightboxVideo.addEventListener('click', e => {
+    if (e.target === lightboxVideo) {
+      lightboxVideo.style.display = 'none';
+      lightboxVideoContent.pause();
+      lightboxVideoContent.src = '';
     }
   });
 </script>
