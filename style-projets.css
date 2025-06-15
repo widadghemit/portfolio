@@ -219,8 +219,8 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s, box-shadow 0.3s;
   object-position: left center; 
-  width: 250px;
-  height: 250px;
+  width: 285px;
+  height: 285px;
   object-fit: cover;
   border-radius: 20px;
 }
