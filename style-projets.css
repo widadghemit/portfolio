@@ -211,7 +211,7 @@
 .design-graphique.illustrator {
   flex-direction: column;
   align-items: center;
-  gap: 30px; /* espace entre texte et images */
+  gap: 15px; /* espace entre texte et images */
   padding: 60px 40px;
 }
 
@@ -222,13 +222,13 @@
 }
 
 .design-graphique.illustrator .texte-projets p {
-  text-align: center;    /* centrer le texte */
+  text-align: justify;    /* centrer le texte */
 }
 
 .design-graphique.illustrator .images-stack {
   flex-direction: row;          /* images côte à côte */
   justify-content: center;      /* centrage horizontal */
-  gap: 20px;
+  gap: 40px;
 }
 
 .design-graphique.illustrator .images-stack img {
