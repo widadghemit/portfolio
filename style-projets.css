@@ -217,10 +217,8 @@
 
 
 .images-stack img {
-  width: 250px;
   height: auto;
   border-radius: 20px;
-  object-fit: cover;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s, box-shadow 0.3s;
   object-position: left center;
