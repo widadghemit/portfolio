@@ -208,12 +208,13 @@
   transform: scale(1.2);
 }
 
-.images-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-top: 40px;
+.images-stack img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
 }
+
 
 .images-stack img {
   width: 250px;
@@ -222,6 +223,7 @@
   object-fit: cover;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s, box-shadow 0.3s;
+  object-position: left center;
 }
 
 .images-stack img:hover {
