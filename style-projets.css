@@ -358,10 +358,11 @@ html {
 }
 
 .lightbox-video {
-  max-width: 90%;
-  max-height: 80%;
+  width: 90vw;
+  max-width: 1200px;
+  max-height: 85vh;
   border-radius: 10px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
 }
 
 .close-lightbox {
