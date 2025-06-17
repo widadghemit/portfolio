@@ -317,42 +317,9 @@
   font-size: 1.6em;
 }
 
-.cta {
-  background-color: #a5b4fc;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 0 25px 0 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-  margin-top: 20px; /* espace au-dessus */
-}
 
-.cta:hover {
-  background-color: #511f80;
-}           
 
-.bureautique .design-graphique {
-  padding: 5px 0;         /* Réduit le haut/bas sans toucher aux côtés */
-  gap: 50px;               /* Moins d'espace entre texte et bouton */
-  width: 80%;
-  margin: auto;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: auto;
-}
 
-/* Réduit l'espace entre les blocs Excel / Word / Analytics */
-.bureautique .design-graphique:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.bloc-bouton {
-  margin-top: 10px; /* petit espace entre le texte et le bouton */
-  text-align: center;
-}
 
 
 
