@@ -319,25 +319,9 @@
   margin-bottom: 10px;
 }
 
-
-.bureautique.design-graphique.illustrator {
-  flex-direction: column;
-  align-items: center;
-  gap: 0px; /* espace entre texte et images */
-  padding: 60px 40px;
+.bureautique .design-graphique {
+  gap: 40px;
 }
-
-.bureautique.design-graphique.illustrator .texte-projets {
-  max-width: none;       /* permet d’avoir du texte plus large */
-  width: 100%;
-  text-align: center;
-}
-
-.bureautique.design-graphique.illustrator .texte-projets p {
-  text-align: justify;    /* centrer le texte */
-}
-
-
 
 
 
