@@ -299,6 +299,10 @@
   margin-top: 10px;         /* espace au-dessus */
 }
 
+.email-link {
+  font-weight: bold;
+}
+
 
 
 .bureautique {
@@ -338,6 +342,7 @@ html {
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .video-thumbnail {
