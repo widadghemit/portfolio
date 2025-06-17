@@ -5,21 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact – Widad</title>
 
-  <!-- Police Bebas Neue ajoutée -->
+  <!-- Police Bebas Neue -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome (icônes) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link href="style-contact.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+
   <style>
-    /* Appliquer Bebas Neue au titre et le centrer */
     .contact-card h1 {
       font-family: 'Bebas Neue', cursive;
       font-size: 3.5rem;
       text-align: center;
       margin-bottom: 20px;
+    }
+    .contact-infos i {
+      margin-right: 8px;
     }
   </style>
 </head>
@@ -48,9 +54,9 @@
       </p>
 
       <div class="contact-infos">
-        <p>📞 <a href="tel:+33651126440">06 51 12 64 40</a></p>
-        <p>📧 <a href="mailto:ghemit.widad@gmail.com">ghemit.widad@gmail.com</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/widad-ghemit" target="_blank" rel="noopener noreferrer">Mon profil LinkedIn</a></p>
+        <p><i class="fa-solid fa-phone" style="color:#1f2039;"></i><a href="tel:+33651126440">06 51 12 64 40</a></p>
+        <p><i class="fa-solid fa-envelope" style="color:#1f2039;"></i><a href="mailto:ghemit.widad@gmail.com">ghemit.widad@gmail.com</a></p>
+        <p><i class="fa-brands fa-linkedin" style="color:#1f2039;"></i><a href="https://www.linkedin.com/in/widad-ghemit" target="_blank" rel="noopener noreferrer">Mon profil LinkedIn</a></p>
       </div>
 
       <form
@@ -69,7 +75,6 @@
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <!-- Optionnel, désactive captcha Formspree -->
         <input type="hidden" name="_captcha" value="false" />
 
         <button type="submit" class="cta">Envoyer</button>
@@ -100,12 +105,10 @@
       const envelope = document.querySelector(".flying-envelope");
       const status = document.getElementById("status");
 
-      // Reset status message
       status.classList.remove("visible");
       status.innerText = "";
 
       const data = new FormData(form);
-
       envelope.classList.add("animate");
 
       fetch(form.action, {
@@ -123,11 +126,7 @@
           form.reset();
         } else {
           response.json().then(data => {
-            if (data.errors) {
-              status.innerText = data.errors.map(error => error.message).join(", ");
-            } else {
-              status.innerText = "Une erreur est survenue. Veuillez réessayer.";
-            }
+            status.innerText = data.errors ? data.errors.map(error => error.message).join(", ") : "Une erreur est survenue. Veuillez réessayer.";
             status.classList.add("visible");
           });
         }
