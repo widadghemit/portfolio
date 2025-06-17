@@ -13,6 +13,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    /* Appliquer Bebas Neue au titre et le centrer */
+    .contact-card h1 {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 3.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body class="page-contact">
 
@@ -44,7 +53,13 @@
         <p>🔗 <a href="https://www.linkedin.com/in/widad-ghemit" target="_blank" rel="noopener noreferrer">Mon profil LinkedIn</a></p>
       </div>
 
-      <form class="form-contact" onsubmit="showConfirmation(event)" aria-label="Formulaire de contact">
+      <form
+        class="form-contact"
+        id="contact-form"
+        action="https://formspree.io/f/mnnvjynr"
+        method="POST"
+        aria-label="Formulaire de contact"
+      >
         <label for="nom">Nom</label>
         <input type="text" id="nom" name="nom" required />
 
@@ -53,6 +68,9 @@
 
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
+
+        <!-- Optionnel, désactive captcha Formspree -->
+        <input type="hidden" name="_captcha" value="false" />
 
         <button type="submit" class="cta">Envoyer</button>
         <div id="status" role="alert" aria-live="polite"></div>
@@ -75,18 +93,50 @@
   </footer>
 
   <script>
-    function showConfirmation(event) {
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
       event.preventDefault();
+
+      const form = event.target;
       const envelope = document.querySelector(".flying-envelope");
       const status = document.getElementById("status");
+
+      // Reset status message
+      status.classList.remove("visible");
+      status.innerText = "";
+
+      const data = new FormData(form);
+
       envelope.classList.add("animate");
-      setTimeout(() => {
+
+      fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        envelope.classList.remove("animate");
+
+        if (response.ok) {
+          status.classList.add("visible");
+          status.innerText = "Votre message a bien été envoyé !";
+          form.reset();
+        } else {
+          response.json().then(data => {
+            if (data.errors) {
+              status.innerText = data.errors.map(error => error.message).join(", ");
+            } else {
+              status.innerText = "Une erreur est survenue. Veuillez réessayer.";
+            }
+            status.classList.add("visible");
+          });
+        }
+      }).catch(() => {
         envelope.classList.remove("animate");
         status.classList.add("visible");
-        status.innerText = "Votre message a bien été envoyé !";
-        event.target.reset();
-      }, 1500);
-    }
+        status.innerText = "Une erreur réseau est survenue. Veuillez réessayer.";
+      });
+    });
   </script>
 </body>
 </html>
