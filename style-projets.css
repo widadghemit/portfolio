@@ -321,36 +321,22 @@ html {
   scroll-behavior: smooth;
 }
 
-.videos-duo {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  max-width: 1200px;   /* limite la largeur totale */
-  width: 100%;    
-  margin: auto;
-  flex-wrap: wrap;
-  align-items: stretch;
+.video-centrale {
+  max-width: 800px;
+  width: 90%;
+  margin: 40px auto;
 }
 
-.video-large {
-  flex: 2;
-}
-
-.video-small {
-  flex: 1;
-}
-
-.videos-duo video {
+.video-centrale video {
   width: 100%;
   height: auto;
-  cursor: pointer;
   display: block;
   border-radius: 8px;
-  aspect-ratio: 16 / 9;  /* <--- force même hauteur proportionnelle */
-  object-fit: cover;  
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
-/* Lightbox */
+/* Lightbox inchangé */
 .lightbox {
   display: none;
   position: fixed;
