@@ -317,24 +317,21 @@
   font-size: 1.6em;
 }
 
-.design-graphique.excel {
+.bureautique.design-graphique.illustrator {
   flex-direction: column;
   align-items: center;
   gap: 0px; /* espace entre texte et images */
   padding: 60px 40px;
-  color: black;
 }
 
-.design-graphique.excel .texte-projets {
+.bureautique.design-graphique.illustrator .texte-projets {
   max-width: none;       /* permet d’avoir du texte plus large */
   width: 100%;
   text-align: center;
-  color: black;
 }
 
-.design-graphique.excel .texte-projets p {
-  text-align: justify;  
-  color: black;/* centrer le texte */
+.bureautique.design-graphique.illustrator .texte-projets p {
+  text-align: justify;    /* centrer le texte */
 }
 
 
