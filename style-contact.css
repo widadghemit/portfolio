@@ -9,9 +9,9 @@ body.page-contact main.contact-section {
 }
 
 .contact-card {
-  background-color: rgba(255,255,255,0.9);
+  background-color: white;
   padding: 30px;
-  border-radius: 0; /* suppression des arrondis */
+  border-radius: 5px; /* suppression des arrondis */
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
   width: 66%;
   max-width: none;
