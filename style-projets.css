@@ -333,20 +333,20 @@
 }           
 
 .bureautique .design-graphique {
-  padding: 20px 0;         /* Réduit le haut/bas sans toucher aux côtés */
-  gap: 60px;               /* Moins d'espace entre texte et bouton */
+  padding: 5px 0;         /* Réduit le haut/bas sans toucher aux côtés */
+  gap: 50px;               /* Moins d'espace entre texte et bouton */
   width: 80%;
   margin: auto;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 450px;
+  min-height: auto;
 }
 
 /* Réduit l'espace entre les blocs Excel / Word / Analytics */
 .bureautique .design-graphique:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 
