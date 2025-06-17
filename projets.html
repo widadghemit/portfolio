@@ -250,9 +250,21 @@ J’ai mis en avant une identité visuelle douce et naturelle, en cohérence ave
   </p>
     </div>
 
-<div class="video-wrapper">
-  <video src="ordi-shopi.mp4" controls></video>
+<div class="videos-duo">
+  <div class="video-large">
+    <video src="ordi-shopi.mp4" controls class="video-thumbnail" data-video="ordi-shopi.mp4"></video>
+  </div>
+  <div class="video-small">
+    <video src="telephone-shopi.mp4" controls class="video-thumbnail" data-video="telephone-shopi.mp4"></video>
+  </div>
 </div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="close-btn" onclick="closeLightbox()">×</span>
+  <video controls autoplay></video>
+</div>
+
 </section>
         
         
@@ -303,6 +315,7 @@ J’ai mis en avant une identité visuelle douce et naturelle, en cohérence ave
   });
 </script>
 
+
     <script>
   const lightboxVideo = document.getElementById('lightbox-video');
   const lightboxVideoContent = document.getElementById('lightbox-video-content');
@@ -330,6 +343,27 @@ J’ai mis en avant une identité visuelle douce et naturelle, en cohérence ave
       lightboxVideoContent.src = '';
     }
   });
+</script>
+
+    <script>
+  const thumbnails = document.querySelectorAll('.video-thumbnail');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxVideo = lightbox.querySelector('video');
+
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      const src = thumb.getAttribute('data-video');
+      lightboxVideo.src = src;
+      lightbox.style.display = 'flex';
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.style.display = 'none';
+    lightboxVideo.pause();
+    lightboxVideo.currentTime = 0;
+    lightboxVideo.src = '';
+  }
 </script>
 
     
