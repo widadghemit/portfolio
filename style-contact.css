@@ -105,3 +105,8 @@ body.page-contact main.contact-section {
 #status.visible {
   opacity: 1;
 }
+
+.form-contact button.cta {
+  align-self: center;
+}
+
