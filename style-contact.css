@@ -18,13 +18,20 @@ body.page-contact main.contact-section {
   text-align: left;
   }
 
-.contact-card h1 {
-  margin-bottom: 20px;
+.titre-central {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5em;
   color: #a5b4fc;
-  font-family: 'Bebas Neue', cursive, sans-serif;
-  font-size: 3.5rem;
+  opacity: 0;
+  animation: fadeInTitre 2s ease-in forwards;
   text-align: center;
 }
+@keyframes fadeInTitre {
+  to {
+    opacity: 1;
+  }
+}
+
 
 /* Texte d’introduction */
 .contact-card > p {
