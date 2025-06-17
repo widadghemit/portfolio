@@ -322,20 +322,22 @@ html {
 }
 
 .video-centrale {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 90%;
   margin: 40px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .video-centrale video {
- max-width: 1200px;
-  width: 90%;
+  width: 100%;
   height: auto;
   display: block;
   border-radius: 8px;
   cursor: pointer;
   box-sizing: border-box;
 }
+
 
 /* Lightbox inchangé */
 .lightbox {
