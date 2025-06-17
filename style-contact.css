@@ -1,16 +1,13 @@
 /* === CONTACT === */
 body.page-contact main.contact-section {
   flex: 1;
-  background-image: url('FondContact.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background: #1f2039;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 40px;
 }
+
 
 .contact-card {
   background-color: rgba(255,255,255,0.9);
