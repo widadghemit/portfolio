@@ -349,6 +349,11 @@
   margin-bottom: 10px;
 }
 
+.bloc-bouton {
+  margin-top: 10px; /* petit espace entre le texte et le bouton */
+  text-align: center;
+}
+
 
 
 html {
