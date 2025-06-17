@@ -251,15 +251,20 @@ J’ai mis en avant une identité visuelle douce et naturelle, en cohérence ave
     </div>
 
 <div class="video-centrale">
-  <video src="ordi-shopi.mp4" controls class="video-thumbnail" data-video="site-sho.mp4"></video>
+    <a href="ordi-shopi.mp4" class="lightbox-trigger-video">
+      <video src="ordi-shopi.mp4" muted playsinline class="video-thumbnail"></video>
+    </a>
+    <a href="site-sho.mp4" class="lightbox-trigger-video">
+      <video src="site-sho.mp4" muted playsinline class="video-thumbnail"></video>
+    </a>
+  </div>
 </div>
 
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox">
-  <span class="close-btn" onclick="closeLightbox()">×</span>
-  <video controls autoplay></video>
+<!-- Lightbox unique pour toutes les vidéos -->
+<div class="lightbox" id="lightbox-video">
+  <span class="close-lightbox" id="close-lightbox-video">&times;</span>
+  <video class="lightbox-video" id="lightbox-video-content" controls></video>
 </div>
-
 </section>
         
         
