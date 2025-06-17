@@ -300,22 +300,25 @@
 }
 
 
+
 .bureautique {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: white;
-  padding: 0;
+  padding: 60px 40px;
   width: 100%;
+}
+
+.bureautique.texte-projets p {
+  color: black;
+  margin-bottom: 10px;
 }
 
 .bureautique h2 {
   color: black;
   text-align: center;
-  margin-top: 40px;        /* espace au-dessus du titre */
-  margin-bottom: 10px;     /* espace entre le titre et le contenu qui suit */
   font-size: 1.6em;
+  margin-bottom: 10px;
 }
+
 
 .bureautique.design-graphique.illustrator {
   flex-direction: column;
