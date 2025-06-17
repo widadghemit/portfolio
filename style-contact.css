@@ -3,16 +3,15 @@ body.page-contact main.contact-section {
   flex: 1;
   background: #1f2039;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
+  align-items: center;      /* centre verticalement */
+  justify-content: center;  /* centre horizontalement */
   padding: 40px;
 }
-
 
 .contact-card {
   background-color: rgba(255,255,255,0.9);
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 0; /* suppression des arrondis */
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
   width: 66%;
   max-width: none;
@@ -23,6 +22,9 @@ body.page-contact main.contact-section {
 .contact-card h1 {
   margin-bottom: 20px;
   color: #a5b4fc;
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
 }
 
 /* Texte d’introduction */
