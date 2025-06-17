@@ -335,7 +335,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+#web {
+  color: white !important;
+}
 .video-centrale {
   display: flex;
   justify-content: center;
